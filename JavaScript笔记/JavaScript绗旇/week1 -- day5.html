@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/><meta name="exporter-version" content="Evernote Mac 9.0.1 (457749)"/><meta name="altitude" content="42.52126693725586"/><meta name="author" content="冯宁宁"/><meta name="created" content="2019-02-23 01:41:29 +0000"/><meta name="latitude" content="40.07970373230069"/><meta name="longitude" content="116.3544487848528"/><meta name="source" content="desktop.mac"/><meta name="updated" content="2019-02-26 01:43:40 +0000"/><meta name="content-class" content="yinxiang.markdown"/><title>week1 -- day5</title></head><body><div style="font-size: 14px; margin: 0; padding: 0; width: 100%;"><h3 style="line-height: 160%; box-sizing: content-box; font-weight: 700; font-size: 27px; color: #333;">字符串</h3>
+<pre style="line-height: 160%; box-sizing: content-box; border: 0; border-radius: 0; margin: 2px 0 8px; background-color: #f5f7f8;"><code style="display: block; overflow-x: auto; background: #1e1e1e; line-height: 160%; box-sizing: content-box; border: 0; border-radius: 0; letter-spacing: -.3px; padding: 18px; color: #f4f4f4; white-space: pre-wrap;"><span style="color: #57a64a; font-style: italic; line-height: 160%; box-sizing: content-box;">/*
+ 字符串： 用单引号或者双引号包裹起来的内容
+ 里面每一项都称之为字符
+
+ 字符串中的 ' + ' :
+    1.其他类型值和字符串相加时 不是进行求和 而是进行字符串拼接 1 + '1' =&gt; '11'
+
+ // ES6提供了模板字符串：更加方便的进行字符串拼接  ${变量名}
+ 
+*/</span>
+</code></pre>
+<h3 style="line-height: 160%; box-sizing: content-box; font-weight: 700; font-size: 27px; color: #333;">function 函数</h3>
+<pre style="line-height: 160%; box-sizing: content-box; border: 0; border-radius: 0; margin: 2px 0 8px; background-color: #f5f7f8;"><code style="display: block; overflow-x: auto; background: #1e1e1e; line-height: 160%; box-sizing: content-box; border: 0; border-radius: 0; letter-spacing: -.3px; padding: 18px; color: #f4f4f4; white-space: pre-wrap;">  <span style="color: #57a64a; font-style: italic; line-height: 160%; box-sizing: content-box;">/*
+    函数就是具备一定功能的代码 相当于一台机器
+    自己创建函数 让它具备一定的功能
+
+    如何定义一个函数
+       语法：
+          fucntion 函数名(形参) {
+              //函数体 代码逻辑
+             }
+    函数执行:
+          函数名(实参);
+    */</span>   
+</code></pre>
+<h3 style="line-height: 160%; box-sizing: content-box; font-weight: 700; font-size: 27px; color: #333;">函数的返回值</h3>
+<pre style="line-height: 160%; box-sizing: content-box; border: 0; border-radius: 0; margin: 2px 0 8px; background-color: #f5f7f8;"><code style="display: block; overflow-x: auto; background: #1e1e1e; line-height: 160%; box-sizing: content-box; border: 0; border-radius: 0; letter-spacing: -.3px; padding: 18px; color: #f4f4f4; white-space: pre-wrap;">     <span style="color: #dcdcdc; line-height: 160%; box-sizing: content-box;"><span style="color: #569cd6; line-height: 160%; box-sizing: content-box;">function</span> <span style="color: #dcdcdc; line-height: 160%; box-sizing: content-box;">add</span>(<span style="color: #dcdcdc; line-height: 160%; box-sizing: content-box;">a,b</span>)</span>{
+        <span style="color: #57a64a; font-style: italic; line-height: 160%; box-sizing: content-box;">// reuturn 后面指定的是什么值 返回的就是什么值</span>
+        <span style="color: #57a64a; font-style: italic; line-height: 160%; box-sizing: content-box;">// 写了return 没有指定返回值 也是undefined</span>
+        <span style="color: #57a64a; font-style: italic; line-height: 160%; box-sizing: content-box;">// 没有指定返回值时 默认返回undefined</span>
+        <span style="color: #569cd6; line-height: 160%; box-sizing: content-box;">return</span> a+b
+    }
+    <span style="color: #57a64a; font-style: italic; line-height: 160%; box-sizing: content-box;">/*
+        函数名()代表的意思：
+            1，函数执行 
+            2，这个整体也代表函数执行后的返回值
+    */</span> 
+
+    <span style="color: #57a64a; font-style: italic; line-height: 160%; box-sizing: content-box;">// 传入两个实参 进行求和并且接受函数返回的结果</span>
+    <span style="color: #569cd6; line-height: 160%; box-sizing: content-box;">var</span> sum = add(<span style="color: #b8d7a3; line-height: 160%; box-sizing: content-box;">10</span>,<span style="color: #b8d7a3; line-height: 160%; box-sizing: content-box;">30</span>)
+    <span style="color: #4ec9b0; line-height: 160%; box-sizing: content-box;">console</span>.log(sum)
+</code></pre>
+<h3 style="line-height: 160%; box-sizing: content-box; font-weight: 700; font-size: 27px; color: #333;">arguments</h3>
+<pre style="line-height: 160%; box-sizing: content-box; border: 0; border-radius: 0; margin: 2px 0 8px; background-color: #f5f7f8;"><code style="display: block; overflow-x: auto; background: #1e1e1e; line-height: 160%; box-sizing: content-box; border: 0; border-radius: 0; letter-spacing: -.3px; padding: 18px; color: #f4f4f4; white-space: pre-wrap;">    <span style="color: #57a64a; font-style: italic; line-height: 160%; box-sizing: content-box;">/*
+        函数中接收参数的两种方式：
+            1，通过形参接收
+            2，arguments接收
+
+        形参和arguments有一种映射关系
+        形参的值变化 arguments中的对应值也会跟着改变
+        arguments 的值变了 对应的形参值也会跟着变化
+    */</span>
+    <span style="color: #dcdcdc; line-height: 160%; box-sizing: content-box;"><span style="color: #569cd6; line-height: 160%; box-sizing: content-box;">function</span> <span style="color: #dcdcdc; line-height: 160%; box-sizing: content-box;">fe</span>(<span style="color: #dcdcdc; line-height: 160%; box-sizing: content-box;"/>) </span>{
+        <span style="color: #57a64a; font-style: italic; line-height: 160%; box-sizing: content-box;">// arguments 类数组 实参集合 传入多少个实参 argument就有多少个实参</span>
+        <span style="color: #57a64a; font-style: italic; line-height: 160%; box-sizing: content-box;">// arguments.length 代表当前传入实参的个数</span>
+        <span style="color: #57a64a; font-style: italic; line-height: 160%; box-sizing: content-box;">// console.log(arguments)</span>
+        <span style="color: #569cd6; line-height: 160%; box-sizing: content-box;">for</span> (<span style="color: #569cd6; line-height: 160%; box-sizing: content-box;">var</span> i = <span style="color: #b8d7a3; line-height: 160%; box-sizing: content-box;">0</span>; i &lt; <span style="color: #4ec9b0; line-height: 160%; box-sizing: content-box;">arguments</span>.length; i++) {
+            <span style="color: #4ec9b0; line-height: 160%; box-sizing: content-box;">console</span>.log(<span style="color: #4ec9b0; line-height: 160%; box-sizing: content-box;">arguments</span>[i])
+        }
+    }
+    fe(<span style="color: #b8d7a3; line-height: 160%; box-sizing: content-box;">10</span>, <span style="color: #b8d7a3; line-height: 160%; box-sizing: content-box;">20</span>, <span style="color: #b8d7a3; line-height: 160%; box-sizing: content-box;">30</span>, <span style="color: #b8d7a3; line-height: 160%; box-sizing: content-box;">40</span>, <span style="color: #b8d7a3; line-height: 160%; box-sizing: content-box;">50</span>)
+</code></pre>
+<h3 style="line-height: 160%; box-sizing: content-box; font-weight: 700; font-size: 27px; color: #333;">函数形参</h3>
+<pre style="line-height: 160%; box-sizing: content-box; border: 0; border-radius: 0; margin: 2px 0 8px; background-color: #f5f7f8;"><code style="display: block; overflow-x: auto; background: #1e1e1e; line-height: 160%; box-sizing: content-box; border: 0; border-radius: 0; letter-spacing: -.3px; padding: 18px; color: #f4f4f4; white-space: pre-wrap;">    <span style="color: #57a64a; font-style: italic; line-height: 160%; box-sizing: content-box;">/*
+        传参： 把函数外面参数 传到函数里面用
+        主要是用来接收传递进来的实参
+    */</span> 
+    <span style="color: #57a64a; font-style: italic; line-height: 160%; box-sizing: content-box;">// 形式上的参数</span>
+    <span style="color: #dcdcdc; line-height: 160%; box-sizing: content-box;"><span style="color: #569cd6; line-height: 160%; box-sizing: content-box;">function</span> <span style="color: #dcdcdc; line-height: 160%; box-sizing: content-box;">add</span>(<span style="color: #dcdcdc; line-height: 160%; box-sizing: content-box;">a,b</span>)</span>{
+        <span style="color: #4ec9b0; line-height: 160%; box-sizing: content-box;">console</span>.log(a*b)
+    }
+    <span style="color: #57a64a; font-style: italic; line-height: 160%; box-sizing: content-box;">// 函数执行时 传入的参数 成为实参 实际参数值</span>
+    add(<span style="color: #b8d7a3; line-height: 160%; box-sizing: content-box;">10</span>,<span style="color: #b8d7a3; line-height: 160%; box-sizing: content-box;">20</span>)
+
+    <span style="color: #dcdcdc; line-height: 160%; box-sizing: content-box;"><span style="color: #569cd6; line-height: 160%; box-sizing: content-box;">function</span> <span style="color: #dcdcdc; line-height: 160%; box-sizing: content-box;">outPut</span>(<span style="color: #dcdcdc; line-height: 160%; box-sizing: content-box;">mess,num,e</span>)</span>{
+        <span style="color: #4ec9b0; line-height: 160%; box-sizing: content-box;">console</span>.log(mess,num,e)
+    }
+    outPut(<span style="color: #d69d85; line-height: 160%; box-sizing: content-box;">'形参'</span>,<span style="color: #b8d7a3; line-height: 160%; box-sizing: content-box;">1</span>,<span style="color: #d69d85; line-height: 160%; box-sizing: content-box;">'传到函数里面用'</span>)
+    outPut(<span style="color: #d69d85; line-height: 160%; box-sizing: content-box;">'实参'</span>,<span style="color: #b8d7a3; line-height: 160%; box-sizing: content-box;">2</span>,<span style="color: #d69d85; line-height: 160%; box-sizing: content-box;">'函数执行时 传入的参数'</span>)
+
+    <span style="color: #57a64a; font-style: italic; line-height: 160%; box-sizing: content-box;">// 函数的作用 封装和复用</span>
+    <span style="color: #569cd6; line-height: 160%; box-sizing: content-box;">var</span> title = <span style="color: #4ec9b0; line-height: 160%; box-sizing: content-box;">document</span>.getElementById(<span style="color: #d69d85; line-height: 160%; box-sizing: content-box;">'title'</span>)
+    <span style="color: #dcdcdc; line-height: 160%; box-sizing: content-box;"><span style="color: #569cd6; line-height: 160%; box-sizing: content-box;">function</span> <span style="color: #dcdcdc; line-height: 160%; box-sizing: content-box;">text</span>(<span style="color: #dcdcdc; line-height: 160%; box-sizing: content-box;">a</span>)</span>{
+        title.innerHTML = a
+    }
+</code></pre>
+<pre style="line-height: 160%; box-sizing: content-box; border: 0; border-radius: 0; margin: 2px 0 8px; background-color: #f5f7f8;"><code style="display: block; overflow-x: auto; background: #1e1e1e; line-height: 160%; box-sizing: content-box; border: 0; border-radius: 0; letter-spacing: -.3px; padding: 18px; color: #f4f4f4; white-space: pre-wrap;">     <span style="color: #57a64a; font-style: italic; line-height: 160%; box-sizing: content-box;">// 函数表达式</span>
+    <span style="color: #57a64a; font-style: italic; line-height: 160%; box-sizing: content-box;">// var fn = function (a) {</span>
+    <span style="color: #57a64a; font-style: italic; line-height: 160%; box-sizing: content-box;">//   console.log('a', a)</span>
+    <span style="color: #57a64a; font-style: italic; line-height: 160%; box-sizing: content-box;">//   console.log(arguments)</span>
+    <span style="color: #57a64a; font-style: italic; line-height: 160%; box-sizing: content-box;">//   return '返回值'</span>
+    <span style="color: #57a64a; font-style: italic; line-height: 160%; box-sizing: content-box;">// }</span>
+    <span style="color: #57a64a; font-style: italic; line-height: 160%; box-sizing: content-box;">// console.log(typeof fn) // "function"</span>
+
+    <span style="color: #57a64a; font-style: italic; line-height: 160%; box-sizing: content-box;">// var ref = fn(100)</span>
+    <span style="color: #57a64a; font-style: italic; line-height: 160%; box-sizing: content-box;">// console.log(ref)</span>
+
+
+    <span style="color: #57a64a; font-style: italic; line-height: 160%; box-sizing: content-box;">// 变量提升</span>
+
+    <span style="color: #57a64a; font-style: italic; line-height: 160%; box-sizing: content-box;">// 可以在函数定义之前 调用执行</span>
+    <span style="color: #57a64a; font-style: italic; line-height: 160%; box-sizing: content-box;">// fe() </span>
+    <span style="color: #57a64a; font-style: italic; line-height: 160%; box-sizing: content-box;">// function fe() {</span>
+    <span style="color: #57a64a; font-style: italic; line-height: 160%; box-sizing: content-box;">//   console.log(123)</span>
+    <span style="color: #57a64a; font-style: italic; line-height: 160%; box-sizing: content-box;">// }</span>
+
+    <span style="color: #57a64a; font-style: italic; line-height: 160%; box-sizing: content-box;">// 函数表达式</span>
+    <span style="color: #57a64a; font-style: italic; line-height: 160%; box-sizing: content-box;">// foo() 会报错 不能在函数定义之前执行</span>
+    <span style="color: #569cd6; line-height: 160%; box-sizing: content-box;">var</span> foo = <span style="color: #dcdcdc; line-height: 160%; box-sizing: content-box;"><span style="color: #569cd6; line-height: 160%; box-sizing: content-box;">function</span> (<span style="color: #dcdcdc; line-height: 160%; box-sizing: content-box;"/>) </span>{
+      <span style="color: #4ec9b0; line-height: 160%; box-sizing: content-box;">console</span>.log(<span style="color: #d69d85; line-height: 160%; box-sizing: content-box;">'foo'</span>)
+    }
+    foo()
+
+    <span style="color: #57a64a; font-style: italic; line-height: 160%; box-sizing: content-box;">// 没名字的函数 匿名函数</span>
+
+    <span style="color: #dcdcdc; line-height: 160%; box-sizing: content-box;"><span style="color: #569cd6; line-height: 160%; box-sizing: content-box;">function</span> <span style="color: #dcdcdc; line-height: 160%; box-sizing: content-box;">add1</span>(<span style="color: #dcdcdc; line-height: 160%; box-sizing: content-box;">a, b</span>) </span>{
+      <span style="color: #569cd6; line-height: 160%; box-sizing: content-box;">return</span> a + b
+    }
+
+    <span style="color: #569cd6; line-height: 160%; box-sizing: content-box;">var</span> add2 = <span style="color: #dcdcdc; line-height: 160%; box-sizing: content-box;"><span style="color: #569cd6; line-height: 160%; box-sizing: content-box;">function</span> (<span style="color: #dcdcdc; line-height: 160%; box-sizing: content-box;">a, b</span>) </span>{
+      <span style="color: #569cd6; line-height: 160%; box-sizing: content-box;">return</span> a + b
+    }
+
+
+    <span style="color: #57a64a; font-style: italic; line-height: 160%; box-sizing: content-box;">// 自执行函数</span>
+    ;(<span style="color: #dcdcdc; line-height: 160%; box-sizing: content-box;"><span style="color: #569cd6; line-height: 160%; box-sizing: content-box;">function</span> (<span style="color: #dcdcdc; line-height: 160%; box-sizing: content-box;">a</span>) </span>{
+      <span style="color: #4ec9b0; line-height: 160%; box-sizing: content-box;">console</span>.log(<span style="color: #d69d85; line-height: 160%; box-sizing: content-box;">'a'</span>, a)
+      <span style="color: #4ec9b0; line-height: 160%; box-sizing: content-box;">console</span>.log(<span style="color: #4ec9b0; line-height: 160%; box-sizing: content-box;">arguments</span>)
+    })(<span style="color: #d69d85; line-height: 160%; box-sizing: content-box;">'hello 自执行'</span>)
+
+    <span style="color: #57a64a; font-style: italic; line-height: 160%; box-sizing: content-box;">// 自执行函数几种写法</span>
+    ;(<span style="color: #dcdcdc; line-height: 160%; box-sizing: content-box;"><span style="color: #569cd6; line-height: 160%; box-sizing: content-box;">function</span> (<span style="color: #dcdcdc; line-height: 160%; box-sizing: content-box;"/>) </span>{
+      <span style="color: #4ec9b0; line-height: 160%; box-sizing: content-box;">console</span>.log(<span style="color: #d69d85; line-height: 160%; box-sizing: content-box;">'hello 自执行'</span>)
+    })()
+
+    ~ <span style="color: #dcdcdc; line-height: 160%; box-sizing: content-box;"><span style="color: #569cd6; line-height: 160%; box-sizing: content-box;">function</span> (<span style="color: #dcdcdc; line-height: 160%; box-sizing: content-box;"/>) </span>{
+      <span style="color: #4ec9b0; line-height: 160%; box-sizing: content-box;">console</span>.log(<span style="color: #d69d85; line-height: 160%; box-sizing: content-box;">'~ 自执行'</span>)
+    }()
+
+    +<span style="color: #dcdcdc; line-height: 160%; box-sizing: content-box;"><span style="color: #569cd6; line-height: 160%; box-sizing: content-box;">function</span> (<span style="color: #dcdcdc; line-height: 160%; box-sizing: content-box;"/>) </span>{
+      <span style="color: #4ec9b0; line-height: 160%; box-sizing: content-box;">console</span>.log(<span style="color: #d69d85; line-height: 160%; box-sizing: content-box;">'+ 自执行'</span>)
+    }() 
+    
+    !<span style="color: #dcdcdc; line-height: 160%; box-sizing: content-box;"><span style="color: #569cd6; line-height: 160%; box-sizing: content-box;">function</span> (<span style="color: #dcdcdc; line-height: 160%; box-sizing: content-box;"/>) </span>{
+      <span style="color: #4ec9b0; line-height: 160%; box-sizing: content-box;">console</span>.log(<span style="color: #d69d85; line-height: 160%; box-sizing: content-box;">'! 自执行'</span>)
+    }()
+
+
+    <span style="color: #57a64a; font-style: italic; line-height: 160%; box-sizing: content-box;">// 接收自执行函数的返回值</span>
+    <span style="color: #569cd6; line-height: 160%; box-sizing: content-box;">var</span> res = (<span style="color: #dcdcdc; line-height: 160%; box-sizing: content-box;"><span style="color: #569cd6; line-height: 160%; box-sizing: content-box;">function</span> (<span style="color: #dcdcdc; line-height: 160%; box-sizing: content-box;">a</span>) </span>{
+       <span style="color: #569cd6; line-height: 160%; box-sizing: content-box;">return</span> <span style="color: #d69d85; line-height: 160%; box-sizing: content-box;">'beijing'</span>
+    })()
+    <span style="color: #4ec9b0; line-height: 160%; box-sizing: content-box;">console</span>.log(res) 
+</code></pre>
+<h3 style="line-height: 160%; box-sizing: content-box; font-weight: 700; font-size: 27px; color: #333;">事件函数</h3>
+<blockquote style="line-height: 160%; box-sizing: content-box; margin: 15px 0; border-left: 4px solid #ddd; padding: 0 15px; color: #777;">
+<p style="line-height: 160%; box-sizing: content-box; margin: 10px 0; color: #333; margin-top: 0; margin-bottom: 0;">元素.onclick = function(){}<br/>
+事件函数中的this指的是当前绑定实践的元素</p>
+</blockquote>
+<pre style="line-height: 160%; box-sizing: content-box; border: 0; border-radius: 0; margin: 2px 0 8px; background-color: #f5f7f8;"><code style="display: block; overflow-x: auto; background: #1e1e1e; line-height: 160%; box-sizing: content-box; border: 0; border-radius: 0; letter-spacing: -.3px; padding: 18px; color: #f4f4f4; white-space: pre-wrap;">    <span style="color: #57a64a; font-style: italic; line-height: 160%; box-sizing: content-box;">// 根据点击的行为 做相应的事情 事件</span>
+    <span style="color: #569cd6; line-height: 160%; box-sizing: content-box;">var</span> box = <span style="color: #4ec9b0; line-height: 160%; box-sizing: content-box;">document</span>.getElementById(<span style="color: #d69d85; line-height: 160%; box-sizing: content-box;">'box'</span>);
+    box.onclick = <span style="color: #dcdcdc; line-height: 160%; box-sizing: content-box;"><span style="color: #569cd6; line-height: 160%; box-sizing: content-box;">function</span>(<span style="color: #dcdcdc; line-height: 160%; box-sizing: content-box;"/>)</span>{
+        <span style="color: #57a64a; font-style: italic; line-height: 160%; box-sizing: content-box;">// this指的是当前绑定事件的元素</span>
+        alert(<span style="color: #d69d85; line-height: 160%; box-sizing: content-box;">'点击了box'</span>)
+        box.style.backgroundColor = <span style="color: #d69d85; line-height: 160%; box-sizing: content-box;">'lightblue'</span>
+        box.style.width = <span style="color: #d69d85; line-height: 160%; box-sizing: content-box;">'500px'</span>
+    }
+    <span style="color: #4ec9b0; line-height: 160%; box-sizing: content-box;">console</span>.dir(box);
+    <span style="color: #569cd6; line-height: 160%; box-sizing: content-box;">var</span> title = <span style="color: #4ec9b0; line-height: 160%; box-sizing: content-box;">document</span>.getElementById(<span style="color: #d69d85; line-height: 160%; box-sizing: content-box;">'title'</span>)
+    title.onclick = <span style="color: #dcdcdc; line-height: 160%; box-sizing: content-box;"><span style="color: #569cd6; line-height: 160%; box-sizing: content-box;">function</span>(<span style="color: #dcdcdc; line-height: 160%; box-sizing: content-box;"/>)</span>{
+        <span style="color: #57a64a; font-style: italic; line-height: 160%; box-sizing: content-box;">// 事件函数中的this 指向的是当前绑定事件的元素</span>
+        <span style="color: #569cd6; line-height: 160%; box-sizing: content-box;">this</span>.style.color = <span style="color: #d69d85; line-height: 160%; box-sizing: content-box;">'red'</span>
+    }
+</code></pre>
+<h3 style="line-height: 160%; box-sizing: content-box; font-weight: 700; font-size: 27px; color: #333;">多元素绑定事件</h3>
+<blockquote style="line-height: 160%; box-sizing: content-box; margin: 15px 0; border-left: 4px solid #ddd; padding: 0 15px; color: #777;">
+<p style="line-height: 160%; box-sizing: content-box; margin: 10px 0; color: #333; margin-top: 0; margin-bottom: 0;">利用for循环 给多个元素绑定事件</p>
+</blockquote>
+<pre style="line-height: 160%; box-sizing: content-box; border: 0; border-radius: 0; margin: 2px 0 8px; background-color: #f5f7f8;"><code style="display: block; overflow-x: auto; background: #1e1e1e; line-height: 160%; box-sizing: content-box; border: 0; border-radius: 0; letter-spacing: -.3px; padding: 18px; color: #f4f4f4; white-space: pre-wrap;">     <span style="color: #569cd6; line-height: 160%; box-sizing: content-box;">var</span> title = <span style="color: #4ec9b0; line-height: 160%; box-sizing: content-box;">document</span>.getElementById(<span style="color: #d69d85; line-height: 160%; box-sizing: content-box;">'list'</span>)
+    <span style="color: #569cd6; line-height: 160%; box-sizing: content-box;">var</span> lists = title.getElementsByTagName(<span style="color: #d69d85; line-height: 160%; box-sizing: content-box;">'li'</span>)
+    <span style="color: #569cd6; line-height: 160%; box-sizing: content-box;">for</span>(<span style="color: #569cd6; line-height: 160%; box-sizing: content-box;">let</span> i = <span style="color: #b8d7a3; line-height: 160%; box-sizing: content-box;">0</span>;i&lt;lists.length;i++){
+        <span style="color: #57a64a; font-style: italic; line-height: 160%; box-sizing: content-box;">// </span>
+        lists[i].ind = i;
+        <span style="color: #4ec9b0; line-height: 160%; box-sizing: content-box;">console</span>.log(lists[i].ind)
+        lists[i].onclick = <span style="color: #dcdcdc; line-height: 160%; box-sizing: content-box;"><span style="color: #569cd6; line-height: 160%; box-sizing: content-box;">function</span>(<span style="color: #dcdcdc; line-height: 160%; box-sizing: content-box;"/>)</span>{
+            alert(<span style="color: #569cd6; line-height: 160%; box-sizing: content-box;">this</span>.ind+<span style="color: #b8d7a3; line-height: 160%; box-sizing: content-box;">1</span>)
+            <span style="color: #57a64a; font-style: italic; line-height: 160%; box-sizing: content-box;">// alert(`点击了第`+this.ind+`个`);</span>
+            <span style="color: #57a64a; font-style: italic; line-height: 160%; box-sizing: content-box;">// this.style.backgroundColor = 'lightblue'</span>
+            <span style="color: #57a64a; font-style: italic; line-height: 160%; box-sizing: content-box;">// i%2? this.className = 'bg':null</span>
+        }
+    }
+</code></pre>
+</div><center style="display:none !important;visibility:collapse !important;height:0 !important;white-space:nowrap;width:100%;overflow:hidden">%23%23%23%20%E5%AD%97%E7%AC%A6%E4%B8%B2%0A%0A%60%60%60javascript%0A%2F*%0A%20%E5%AD%97%E7%AC%A6%E4%B8%B2%EF%BC%9A%20%E7%94%A8%E5%8D%95%E5%BC%95%E5%8F%B7%E6%88%96%E8%80%85%E5%8F%8C%E5%BC%95%E5%8F%B7%E5%8C%85%E8%A3%B9%E8%B5%B7%E6%9D%A5%E7%9A%84%E5%86%85%E5%AE%B9%0A%20%E9%87%8C%E9%9D%A2%E6%AF%8F%E4%B8%80%E9%A1%B9%E9%83%BD%E7%A7%B0%E4%B9%8B%E4%B8%BA%E5%AD%97%E7%AC%A6%0A%0A%20%E5%AD%97%E7%AC%A6%E4%B8%B2%E4%B8%AD%E7%9A%84%20'%20%2B%20'%20%3A%0A%20%20%20%201.%E5%85%B6%E4%BB%96%E7%B1%BB%E5%9E%8B%E5%80%BC%E5%92%8C%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%9B%B8%E5%8A%A0%E6%97%B6%20%E4%B8%8D%E6%98%AF%E8%BF%9B%E8%A1%8C%E6%B1%82%E5%92%8C%20%E8%80%8C%E6%98%AF%E8%BF%9B%E8%A1%8C%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%8B%BC%E6%8E%A5%201%20%2B%20'1'%20%3D%3E%20'11'%0A%0A%20%2F%2F%20ES6%E6%8F%90%E4%BE%9B%E4%BA%86%E6%A8%A1%E6%9D%BF%E5%AD%97%E7%AC%A6%E4%B8%B2%EF%BC%9A%E6%9B%B4%E5%8A%A0%E6%96%B9%E4%BE%BF%E7%9A%84%E8%BF%9B%E8%A1%8C%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%8B%BC%E6%8E%A5%20%20%24%7B%E5%8F%98%E9%87%8F%E5%90%8D%7D%0A%20%0A*%2F%0A%60%60%60%0A%0A%23%23%23%20function%20%E5%87%BD%E6%95%B0%0A%60%60%60javascript%0A%20%20%2F*%0A%20%20%20%20%E5%87%BD%E6%95%B0%E5%B0%B1%E6%98%AF%E5%85%B7%E5%A4%87%E4%B8%80%E5%AE%9A%E5%8A%9F%E8%83%BD%E7%9A%84%E4%BB%A3%E7%A0%81%20%E7%9B%B8%E5%BD%93%E4%BA%8E%E4%B8%80%E5%8F%B0%E6%9C%BA%E5%99%A8%0A%20%20%20%20%E8%87%AA%E5%B7%B1%E5%88%9B%E5%BB%BA%E5%87%BD%E6%95%B0%20%E8%AE%A9%E5%AE%83%E5%85%B7%E5%A4%87%E4%B8%80%E5%AE%9A%E7%9A%84%E5%8A%9F%E8%83%BD%0A%0A%20%20%20%20%E5%A6%82%E4%BD%95%E5%AE%9A%E4%B9%89%E4%B8%80%E4%B8%AA%E5%87%BD%E6%95%B0%0A%20%20%20%20%20%20%20%E8%AF%AD%E6%B3%95%EF%BC%9A%0A%20%20%20%20%20%20%20%20%20%20fucntion%20%E5%87%BD%E6%95%B0%E5%90%8D(%E5%BD%A2%E5%8F%82)%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%2F%2F%E5%87%BD%E6%95%B0%E4%BD%93%20%E4%BB%A3%E7%A0%81%E9%80%BB%E8%BE%91%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%E5%87%BD%E6%95%B0%E6%89%A7%E8%A1%8C%3A%0A%20%20%20%20%20%20%20%20%20%20%E5%87%BD%E6%95%B0%E5%90%8D(%E5%AE%9E%E5%8F%82)%3B%0A%20%20%20%20*%2F%20%20%20%0A%60%60%60%0A%0A%23%23%23%20%E5%87%BD%E6%95%B0%E7%9A%84%E8%BF%94%E5%9B%9E%E5%80%BC%0A%60%60%60javascript%0A%20%20%20%20%20function%20add(a%2Cb)%7B%0A%20%20%20%20%20%20%20%20%2F%2F%20reuturn%20%E5%90%8E%E9%9D%A2%E6%8C%87%E5%AE%9A%E7%9A%84%E6%98%AF%E4%BB%80%E4%B9%88%E5%80%BC%20%E8%BF%94%E5%9B%9E%E7%9A%84%E5%B0%B1%E6%98%AF%E4%BB%80%E4%B9%88%E5%80%BC%0A%20%20%20%20%20%20%20%20%2F%2F%20%E5%86%99%E4%BA%86return%20%E6%B2%A1%E6%9C%89%E6%8C%87%E5%AE%9A%E8%BF%94%E5%9B%9E%E5%80%BC%20%E4%B9%9F%E6%98%AFundefined%0A%20%20%20%20%20%20%20%20%2F%2F%20%E6%B2%A1%E6%9C%89%E6%8C%87%E5%AE%9A%E8%BF%94%E5%9B%9E%E5%80%BC%E6%97%B6%20%E9%BB%98%E8%AE%A4%E8%BF%94%E5%9B%9Eundefined%0A%20%20%20%20%20%20%20%20return%20a%2Bb%0A%20%20%20%20%7D%0A%20%20%20%20%2F*%0A%20%20%20%20%20%20%20%20%E5%87%BD%E6%95%B0%E5%90%8D()%E4%BB%A3%E8%A1%A8%E7%9A%84%E6%84%8F%E6%80%9D%EF%BC%9A%0A%20%20%20%20%20%20%20%20%20%20%20%201%EF%BC%8C%E5%87%BD%E6%95%B0%E6%89%A7%E8%A1%8C%20%0A%20%20%20%20%20%20%20%20%20%20%20%202%EF%BC%8C%E8%BF%99%E4%B8%AA%E6%95%B4%E4%BD%93%E4%B9%9F%E4%BB%A3%E8%A1%A8%E5%87%BD%E6%95%B0%E6%89%A7%E8%A1%8C%E5%90%8E%E7%9A%84%E8%BF%94%E5%9B%9E%E5%80%BC%0A%20%20%20%20*%2F%20%0A%0A%20%20%20%20%2F%2F%20%E4%BC%A0%E5%85%A5%E4%B8%A4%E4%B8%AA%E5%AE%9E%E5%8F%82%20%E8%BF%9B%E8%A1%8C%E6%B1%82%E5%92%8C%E5%B9%B6%E4%B8%94%E6%8E%A5%E5%8F%97%E5%87%BD%E6%95%B0%E8%BF%94%E5%9B%9E%E7%9A%84%E7%BB%93%E6%9E%9C%0A%20%20%20%20var%20sum%20%3D%20add(10%2C30)%0A%20%20%20%20console.log(sum)%0A%60%60%60%0A%0A%23%23%23%20arguments%20%0A%60%60%60javascript%0A%20%20%20%20%2F*%0A%20%20%20%20%20%20%20%20%E5%87%BD%E6%95%B0%E4%B8%AD%E6%8E%A5%E6%94%B6%E5%8F%82%E6%95%B0%E7%9A%84%E4%B8%A4%E7%A7%8D%E6%96%B9%E5%BC%8F%EF%BC%9A%0A%20%20%20%20%20%20%20%20%20%20%20%201%EF%BC%8C%E9%80%9A%E8%BF%87%E5%BD%A2%E5%8F%82%E6%8E%A5%E6%94%B6%0A%20%20%20%20%20%20%20%20%20%20%20%202%EF%BC%8Carguments%E6%8E%A5%E6%94%B6%0A%0A%20%20%20%20%20%20%20%20%E5%BD%A2%E5%8F%82%E5%92%8Carguments%E6%9C%89%E4%B8%80%E7%A7%8D%E6%98%A0%E5%B0%84%E5%85%B3%E7%B3%BB%0A%20%20%20%20%20%20%20%20%E5%BD%A2%E5%8F%82%E7%9A%84%E5%80%BC%E5%8F%98%E5%8C%96%20arguments%E4%B8%AD%E7%9A%84%E5%AF%B9%E5%BA%94%E5%80%BC%E4%B9%9F%E4%BC%9A%E8%B7%9F%E7%9D%80%E6%94%B9%E5%8F%98%0A%20%20%20%20%20%20%20%20arguments%20%E7%9A%84%E5%80%BC%E5%8F%98%E4%BA%86%20%E5%AF%B9%E5%BA%94%E7%9A%84%E5%BD%A2%E5%8F%82%E5%80%BC%E4%B9%9F%E4%BC%9A%E8%B7%9F%E7%9D%80%E5%8F%98%E5%8C%96%0A%20%20%20%20*%2F%0A%20%20%20%20function%20fe()%20%7B%0A%20%20%20%20%20%20%20%20%2F%2F%20arguments%20%E7%B1%BB%E6%95%B0%E7%BB%84%20%E5%AE%9E%E5%8F%82%E9%9B%86%E5%90%88%20%E4%BC%A0%E5%85%A5%E5%A4%9A%E5%B0%91%E4%B8%AA%E5%AE%9E%E5%8F%82%20argument%E5%B0%B1%E6%9C%89%E5%A4%9A%E5%B0%91%E4%B8%AA%E5%AE%9E%E5%8F%82%0A%20%20%20%20%20%20%20%20%2F%2F%20arguments.length%20%E4%BB%A3%E8%A1%A8%E5%BD%93%E5%89%8D%E4%BC%A0%E5%85%A5%E5%AE%9E%E5%8F%82%E7%9A%84%E4%B8%AA%E6%95%B0%0A%20%20%20%20%20%20%20%20%2F%2F%20console.log(arguments)%0A%20%20%20%20%20%20%20%20for%20(var%20i%20%3D%200%3B%20i%20%3C%20arguments.length%3B%20i%2B%2B)%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20console.log(arguments%5Bi%5D)%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%7D%0A%20%20%20%20fe(10%2C%2020%2C%2030%2C%2040%2C%2050)%0A%60%60%60%0A%0A%23%23%23%20%E5%87%BD%E6%95%B0%E5%BD%A2%E5%8F%82%0A%60%60%60javascript%0A%20%20%20%20%2F*%0A%20%20%20%20%20%20%20%20%E4%BC%A0%E5%8F%82%EF%BC%9A%20%E6%8A%8A%E5%87%BD%E6%95%B0%E5%A4%96%E9%9D%A2%E5%8F%82%E6%95%B0%20%E4%BC%A0%E5%88%B0%E5%87%BD%E6%95%B0%E9%87%8C%E9%9D%A2%E7%94%A8%0A%20%20%20%20%20%20%20%20%E4%B8%BB%E8%A6%81%E6%98%AF%E7%94%A8%E6%9D%A5%E6%8E%A5%E6%94%B6%E4%BC%A0%E9%80%92%E8%BF%9B%E6%9D%A5%E7%9A%84%E5%AE%9E%E5%8F%82%0A%20%20%20%20*%2F%20%0A%20%20%20%20%2F%2F%20%E5%BD%A2%E5%BC%8F%E4%B8%8A%E7%9A%84%E5%8F%82%E6%95%B0%0A%20%20%20%20function%20add(a%2Cb)%7B%0A%20%20%20%20%20%20%20%20console.log(a*b)%0A%20%20%20%20%7D%0A%20%20%20%20%2F%2F%20%E5%87%BD%E6%95%B0%E6%89%A7%E8%A1%8C%E6%97%B6%20%E4%BC%A0%E5%85%A5%E7%9A%84%E5%8F%82%E6%95%B0%20%E6%88%90%E4%B8%BA%E5%AE%9E%E5%8F%82%20%E5%AE%9E%E9%99%85%E5%8F%82%E6%95%B0%E5%80%BC%0A%20%20%20%20add(10%2C20)%0A%0A%20%20%20%20function%20outPut(mess%2Cnum%2Ce)%7B%0A%20%20%20%20%20%20%20%20console.log(mess%2Cnum%2Ce)%0A%20%20%20%20%7D%0A%20%20%20%20outPut('%E5%BD%A2%E5%8F%82'%2C1%2C'%E4%BC%A0%E5%88%B0%E5%87%BD%E6%95%B0%E9%87%8C%E9%9D%A2%E7%94%A8')%0A%20%20%20%20outPut('%E5%AE%9E%E5%8F%82'%2C2%2C'%E5%87%BD%E6%95%B0%E6%89%A7%E8%A1%8C%E6%97%B6%20%E4%BC%A0%E5%85%A5%E7%9A%84%E5%8F%82%E6%95%B0')%0A%0A%20%20%20%20%2F%2F%20%E5%87%BD%E6%95%B0%E7%9A%84%E4%BD%9C%E7%94%A8%20%E5%B0%81%E8%A3%85%E5%92%8C%E5%A4%8D%E7%94%A8%0A%20%20%20%20var%20title%20%3D%20document.getElementById('title')%0A%20%20%20%20function%20text(a)%7B%0A%20%20%20%20%20%20%20%20title.innerHTML%20%3D%20a%0A%20%20%20%20%7D%0A%60%60%60%0A%0A%60%60%60javascript%0A%20%20%20%20%20%2F%2F%20%E5%87%BD%E6%95%B0%E8%A1%A8%E8%BE%BE%E5%BC%8F%0A%20%20%20%20%2F%2F%20var%20fn%20%3D%20function%20(a)%20%7B%0A%20%20%20%20%2F%2F%20%20%20console.log('a'%2C%20a)%0A%20%20%20%20%2F%2F%20%20%20console.log(arguments)%0A%20%20%20%20%2F%2F%20%20%20return%20'%E8%BF%94%E5%9B%9E%E5%80%BC'%0A%20%20%20%20%2F%2F%20%7D%0A%20%20%20%20%2F%2F%20console.log(typeof%20fn)%20%2F%2F%20%22function%22%0A%0A%20%20%20%20%2F%2F%20var%20ref%20%3D%20fn(100)%0A%20%20%20%20%2F%2F%20console.log(ref)%0A%0A%0A%20%20%20%20%2F%2F%20%E5%8F%98%E9%87%8F%E6%8F%90%E5%8D%87%0A%0A%20%20%20%20%2F%2F%20%E5%8F%AF%E4%BB%A5%E5%9C%A8%E5%87%BD%E6%95%B0%E5%AE%9A%E4%B9%89%E4%B9%8B%E5%89%8D%20%E8%B0%83%E7%94%A8%E6%89%A7%E8%A1%8C%0A%20%20%20%20%2F%2F%20fe()%20%0A%20%20%20%20%2F%2F%20function%20fe()%20%7B%0A%20%20%20%20%2F%2F%20%20%20console.log(123)%0A%20%20%20%20%2F%2F%20%7D%0A%0A%20%20%20%20%2F%2F%20%E5%87%BD%E6%95%B0%E8%A1%A8%E8%BE%BE%E5%BC%8F%0A%20%20%20%20%2F%2F%20foo()%20%E4%BC%9A%E6%8A%A5%E9%94%99%20%E4%B8%8D%E8%83%BD%E5%9C%A8%E5%87%BD%E6%95%B0%E5%AE%9A%E4%B9%89%E4%B9%8B%E5%89%8D%E6%89%A7%E8%A1%8C%0A%20%20%20%20var%20foo%20%3D%20function%20()%20%7B%0A%20%20%20%20%20%20console.log('foo')%0A%20%20%20%20%7D%0A%20%20%20%20foo()%0A%0A%20%20%20%20%2F%2F%20%E6%B2%A1%E5%90%8D%E5%AD%97%E7%9A%84%E5%87%BD%E6%95%B0%20%E5%8C%BF%E5%90%8D%E5%87%BD%E6%95%B0%0A%0A%20%20%20%20function%20add1(a%2C%20b)%20%7B%0A%20%20%20%20%20%20return%20a%20%2B%20b%0A%20%20%20%20%7D%0A%0A%20%20%20%20var%20add2%20%3D%20function%20(a%2C%20b)%20%7B%0A%20%20%20%20%20%20return%20a%20%2B%20b%0A%20%20%20%20%7D%0A%0A%0A%20%20%20%20%2F%2F%20%E8%87%AA%E6%89%A7%E8%A1%8C%E5%87%BD%E6%95%B0%0A%20%20%20%20%3B(function%20(a)%20%7B%0A%20%20%20%20%20%20console.log('a'%2C%20a)%0A%20%20%20%20%20%20console.log(arguments)%0A%20%20%20%20%7D)('hello%20%E8%87%AA%E6%89%A7%E8%A1%8C')%0A%0A%20%20%20%20%2F%2F%20%E8%87%AA%E6%89%A7%E8%A1%8C%E5%87%BD%E6%95%B0%E5%87%A0%E7%A7%8D%E5%86%99%E6%B3%95%0A%20%20%20%20%3B(function%20()%20%7B%0A%20%20%20%20%20%20console.log('hello%20%E8%87%AA%E6%89%A7%E8%A1%8C')%0A%20%20%20%20%7D)()%0A%0A%20%20%20%20~%20function%20()%20%7B%0A%20%20%20%20%20%20console.log('~%20%E8%87%AA%E6%89%A7%E8%A1%8C')%0A%20%20%20%20%7D()%0A%0A%20%20%20%20%2Bfunction%20()%20%7B%0A%20%20%20%20%20%20console.log('%2B%20%E8%87%AA%E6%89%A7%E8%A1%8C')%0A%20%20%20%20%7D()%20%0A%20%20%20%20%0A%20%20%20%20!function%20()%20%7B%0A%20%20%20%20%20%20console.log('!%20%E8%87%AA%E6%89%A7%E8%A1%8C')%0A%20%20%20%20%7D()%0A%0A%0A%20%20%20%20%2F%2F%20%E6%8E%A5%E6%94%B6%E8%87%AA%E6%89%A7%E8%A1%8C%E5%87%BD%E6%95%B0%E7%9A%84%E8%BF%94%E5%9B%9E%E5%80%BC%0A%20%20%20%20var%20res%20%3D%20(function%20(a)%20%7B%0A%20%20%20%20%20%20%20return%20'beijing'%0A%20%20%20%20%7D)()%0A%20%20%20%20console.log(res)%20%0A%60%60%60%0A%0A%23%23%23%20%E4%BA%8B%E4%BB%B6%E5%87%BD%E6%95%B0%0A%3E%20%E5%85%83%E7%B4%A0.onclick%20%3D%20function()%7B%7D%0A%3E%20%E4%BA%8B%E4%BB%B6%E5%87%BD%E6%95%B0%E4%B8%AD%E7%9A%84this%E6%8C%87%E7%9A%84%E6%98%AF%E5%BD%93%E5%89%8D%E7%BB%91%E5%AE%9A%E5%AE%9E%E8%B7%B5%E7%9A%84%E5%85%83%E7%B4%A0%0A%60%60%60javascript%0A%20%20%20%20%2F%2F%20%E6%A0%B9%E6%8D%AE%E7%82%B9%E5%87%BB%E7%9A%84%E8%A1%8C%E4%B8%BA%20%E5%81%9A%E7%9B%B8%E5%BA%94%E7%9A%84%E4%BA%8B%E6%83%85%20%E4%BA%8B%E4%BB%B6%0A%20%20%20%20var%20box%20%3D%20document.getElementById('box')%3B%0A%20%20%20%20box.onclick%20%3D%20function()%7B%0A%20%20%20%20%20%20%20%20%2F%2F%20this%E6%8C%87%E7%9A%84%E6%98%AF%E5%BD%93%E5%89%8D%E7%BB%91%E5%AE%9A%E4%BA%8B%E4%BB%B6%E7%9A%84%E5%85%83%E7%B4%A0%0A%20%20%20%20%20%20%20%20alert('%E7%82%B9%E5%87%BB%E4%BA%86box')%0A%20%20%20%20%20%20%20%20box.style.backgroundColor%20%3D%20'lightblue'%0A%20%20%20%20%20%20%20%20box.style.width%20%3D%20'500px'%0A%20%20%20%20%7D%0A%20%20%20%20console.dir(box)%3B%0A%20%20%20%20var%20title%20%3D%20document.getElementById('title')%0A%20%20%20%20title.onclick%20%3D%20function()%7B%0A%20%20%20%20%20%20%20%20%2F%2F%20%E4%BA%8B%E4%BB%B6%E5%87%BD%E6%95%B0%E4%B8%AD%E7%9A%84this%20%E6%8C%87%E5%90%91%E7%9A%84%E6%98%AF%E5%BD%93%E5%89%8D%E7%BB%91%E5%AE%9A%E4%BA%8B%E4%BB%B6%E7%9A%84%E5%85%83%E7%B4%A0%0A%20%20%20%20%20%20%20%20this.style.color%20%3D%20'red'%0A%20%20%20%20%7D%0A%60%60%60%0A%0A%23%23%23%20%E5%A4%9A%E5%85%83%E7%B4%A0%E7%BB%91%E5%AE%9A%E4%BA%8B%E4%BB%B6%0A%3E%20%E5%88%A9%E7%94%A8for%E5%BE%AA%E7%8E%AF%20%E7%BB%99%E5%A4%9A%E4%B8%AA%E5%85%83%E7%B4%A0%E7%BB%91%E5%AE%9A%E4%BA%8B%E4%BB%B6%0A%60%60%60javascript%0A%20%20%20%20%20var%20title%20%3D%20document.getElementById('list')%0A%20%20%20%20var%20lists%20%3D%20title.getElementsByTagName('li')%0A%20%20%20%20for(let%20i%20%3D%200%3Bi%3Clists.length%3Bi%2B%2B)%7B%0A%20%20%20%20%20%20%20%20%2F%2F%20%0A%20%20%20%20%20%20%20%20lists%5Bi%5D.ind%20%3D%20i%3B%0A%20%20%20%20%20%20%20%20console.log(lists%5Bi%5D.ind)%0A%20%20%20%20%20%20%20%20lists%5Bi%5D.onclick%20%3D%20function()%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20alert(this.ind%2B1)%0A%20%20%20%20%20%20%20%20%20%20%20%20%2F%2F%20alert(%60%E7%82%B9%E5%87%BB%E4%BA%86%E7%AC%AC%60%2Bthis.ind%2B%60%E4%B8%AA%60)%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%2F%2F%20this.style.backgroundColor%20%3D%20'lightblue'%0A%20%20%20%20%20%20%20%20%20%20%20%20%2F%2F%20i%252%3F%20this.className%20%3D%20'bg'%3Anull%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%7D%0A%60%60%60%0A</center></body></html>

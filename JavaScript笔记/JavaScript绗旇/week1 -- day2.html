@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/><meta name="exporter-version" content="Evernote Mac 9.0.1 (457749)"/><meta name="altitude" content="42.20278549194336"/><meta name="author" content="冯宁宁"/><meta name="created" content="2019-02-19 02:13:45 +0000"/><meta name="latitude" content="40.07967580322721"/><meta name="longitude" content="116.3544634478372"/><meta name="source" content="desktop.mac"/><meta name="updated" content="2019-04-03 11:47:19 +0000"/><meta name="content-class" content="yinxiang.markdown"/><title>week1 -- day2</title></head><body><div style="font-size: 14px; margin: 0; padding: 0; width: 100%;"><h3 style="line-height: 160%; box-sizing: content-box; font-weight: 700; font-size: 27px; color: #333;">数字类型转换  Number</h3>
+<h5 style="line-height: 160%; box-sizing: content-box; font-weight: 700; font-size: 16px; color: #333;">字符串转数字</h5>
+<blockquote style="line-height: 160%; box-sizing: content-box; margin: 15px 0; border-left: 4px solid #ddd; padding: 0 15px; color: #777;">
+<ul style="line-height: 160%; box-sizing: content-box; display: block; list-style-type: disc; padding-left: 30px; margin: 6px 0 10px; color: #333; margin-top: 0; margin-bottom: 0;">
+<li style="line-height: 160%; box-sizing: content-box; position: relative;">方法：Number(“String”) 强制转换</li>
+<li style="line-height: 160%; box-sizing: content-box; position: relative;">Number('') -&gt; 0</li>
+<li style="line-height: 160%; box-sizing: content-box; position: relative;">Number("10px") -&gt; NaN</li>
+<li style="line-height: 160%; box-sizing: content-box; position: relative;">只要字符串中出现非有效字符，直接返回NaN</li>
+</ul>
+</blockquote>
+<h5 style="line-height: 160%; box-sizing: content-box; font-weight: 700; font-size: 16px; color: #333;">布尔类型转数字</h5>
+<blockquote style="line-height: 160%; box-sizing: content-box; margin: 15px 0; border-left: 4px solid #ddd; padding: 0 15px; color: #777;">
+<ul style="line-height: 160%; box-sizing: content-box; display: block; list-style-type: disc; padding-left: 30px; margin: 6px 0 10px; color: #333; margin-top: 0; margin-bottom: 0;">
+<li style="line-height: 160%; box-sizing: content-box; position: relative;">Number(true) -&gt; 1</li>
+<li style="line-height: 160%; box-sizing: content-box; position: relative;">Number(flase) -&gt; 0</li>
+</ul>
+</blockquote>
+<h5 style="line-height: 160%; box-sizing: content-box; font-weight: 700; font-size: 16px; color: #333;">null 转数字</h5>
+<blockquote style="line-height: 160%; box-sizing: content-box; margin: 15px 0; border-left: 4px solid #ddd; padding: 0 15px; color: #777;">
+<ul style="line-height: 160%; box-sizing: content-box; display: block; list-style-type: disc; padding-left: 30px; margin: 6px 0 10px; color: #333; margin-top: 0; margin-bottom: 0;">
+<li style="line-height: 160%; box-sizing: content-box; position: relative;">Number(null) -&gt; 0</li>
+</ul>
+</blockquote>
+<h5 style="line-height: 160%; box-sizing: content-box; font-weight: 700; font-size: 16px; color: #333;">undefined</h5>
+<blockquote style="line-height: 160%; box-sizing: content-box; margin: 15px 0; border-left: 4px solid #ddd; padding: 0 15px; color: #777;">
+<ul style="line-height: 160%; box-sizing: content-box; display: block; list-style-type: disc; padding-left: 30px; margin: 6px 0 10px; color: #333; margin-top: 0; margin-bottom: 0;">
+<li style="line-height: 160%; box-sizing: content-box; position: relative;">Number(undefined) -&gt; NaN</li>
+</ul>
+</blockquote>
+<h5 style="line-height: 160%; box-sizing: content-box; font-weight: 700; font-size: 16px; color: #333;">数组 转数字</h5>
+<blockquote style="line-height: 160%; box-sizing: content-box; margin: 15px 0; border-left: 4px solid #ddd; padding: 0 15px; color: #777;">
+<ul style="line-height: 160%; box-sizing: content-box; display: block; list-style-type: disc; padding-left: 30px; margin: 6px 0 10px; color: #333; margin-top: 0; margin-bottom: 0;">
+<li style="line-height: 160%; box-sizing: content-box; position: relative;">先将数组转换成字符串，然后再转换成数字</li>
+<li style="line-height: 160%; box-sizing: content-box; position: relative;">Number([]) // Number([]) =&gt; Number('') =&gt; 0</li>
+<li style="line-height: 160%; box-sizing: content-box; position: relative;">Number([100]) //  =&gt; Number('100') =&gt; 100</li>
+<li style="line-height: 160%; box-sizing: content-box; position: relative;">Number([10, 20, 30]) // Number('10, 20, 30') =&gt; NaN</li>
+<li style="line-height: 160%; box-sizing: content-box; position: relative;">Number([undefined]) =&gt; 0</li>
+</ul>
+</blockquote>
+<h5 style="line-height: 160%; box-sizing: content-box; font-weight: 700; font-size: 16px; color: #333;">对象 转数字</h5>
+<blockquote style="line-height: 160%; box-sizing: content-box; margin: 15px 0; border-left: 4px solid #ddd; padding: 0 15px; color: #777;">
+<ul style="line-height: 160%; box-sizing: content-box; display: block; list-style-type: disc; padding-left: 30px; margin: 6px 0 10px; color: #333; margin-top: 0; margin-bottom: 0;">
+<li style="line-height: 160%; box-sizing: content-box; position: relative;">Number({}) =&gt; NaN</li>
+</ul>
+</blockquote>
+<h5 style="line-height: 160%; box-sizing: content-box; font-weight: 700; font-size: 16px; color: #333;">正则 转数字</h5>
+<blockquote style="line-height: 160%; box-sizing: content-box; margin: 15px 0; border-left: 4px solid #ddd; padding: 0 15px; color: #777;">
+<ul style="line-height: 160%; box-sizing: content-box; display: block; list-style-type: disc; padding-left: 30px; margin: 6px 0 10px; color: #333; margin-top: 0; margin-bottom: 0;">
+<li style="line-height: 160%; box-sizing: content-box; position: relative;">Number(/^\d+$/) =&gt; NaN</li>
+</ul>
+</blockquote>
+<h5 style="line-height: 160%; box-sizing: content-box; font-weight: 700; font-size: 16px; color: #333;">函数 转数字</h5>
+<blockquote style="line-height: 160%; box-sizing: content-box; margin: 15px 0; border-left: 4px solid #ddd; padding: 0 15px; color: #777;">
+<ul style="line-height: 160%; box-sizing: content-box; display: block; list-style-type: disc; padding-left: 30px; margin: 6px 0 10px; color: #333; margin-top: 0; margin-bottom: 0;">
+<li style="line-height: 160%; box-sizing: content-box; position: relative;">Number(function(){}) =&gt; NaN</li>
+</ul>
+</blockquote>
+<h3 style="line-height: 160%; box-sizing: content-box; font-weight: 700; font-size: 27px; color: #333;">数字转换 parseInt  parseFloat</h3>
+<h5 style="line-height: 160%; box-sizing: content-box; font-weight: 700; font-size: 16px; color: #333;">parseInt</h5>
+<blockquote style="line-height: 160%; box-sizing: content-box; margin: 15px 0; border-left: 4px solid #ddd; padding: 0 15px; color: #777;">
+<ul style="line-height: 160%; box-sizing: content-box; display: block; list-style-type: disc; padding-left: 30px; margin: 6px 0 10px; color: #333; margin-top: 0; margin-bottom: 0;">
+<li style="line-height: 160%; box-sizing: content-box; position: relative;">从左向右进行转换，一旦遇到非有效字符 停止转化 然后将转换的数字字符以数字形式返回</li>
+<li style="line-height: 160%; box-sizing: content-box; position: relative;">如果左边第一个字符就是非有效字符，即直接返回NaN</li>
+<li style="line-height: 160%; box-sizing: content-box; position: relative;">不能识别小数点 有取整数的作用 小数点后面的有效数字忽略不转换</li>
+</ul>
+</blockquote>
+<pre style="line-height: 160%; box-sizing: content-box; border: 0; border-radius: 0; margin: 2px 0 8px; background-color: #f5f7f8;"><code style="display: block; overflow-x: auto; background: #1e1e1e; line-height: 160%; box-sizing: content-box; border: 0; border-radius: 0; letter-spacing: -.3px; padding: 18px; color: #f4f4f4; white-space: pre-wrap;">    <span style="color: #4ec9b0; line-height: 160%; box-sizing: content-box;">console</span>.log(<span style="color: #4ec9b0; line-height: 160%; box-sizing: content-box;">parseInt</span>(<span style="color: #d69d85; line-height: 160%; box-sizing: content-box;">'A100'</span>)) <span style="color: #57a64a; font-style: italic; line-height: 160%; box-sizing: content-box;">// NaN</span>
+    <span style="color: #4ec9b0; line-height: 160%; box-sizing: content-box;">console</span>.log(<span style="color: #4ec9b0; line-height: 160%; box-sizing: content-box;">parseInt</span>(<span style="color: #d69d85; line-height: 160%; box-sizing: content-box;">'1A00'</span>)) <span style="color: #57a64a; font-style: italic; line-height: 160%; box-sizing: content-box;">// 1</span>
+    <span style="color: #4ec9b0; line-height: 160%; box-sizing: content-box;">console</span>.log(<span style="color: #4ec9b0; line-height: 160%; box-sizing: content-box;">parseInt</span>(<span style="color: #d69d85; line-height: 160%; box-sizing: content-box;">'10A0'</span>)) <span style="color: #57a64a; font-style: italic; line-height: 160%; box-sizing: content-box;">// 10</span>
+    <span style="color: #4ec9b0; line-height: 160%; box-sizing: content-box;">console</span>.log(<span style="color: #4ec9b0; line-height: 160%; box-sizing: content-box;">parseInt</span>(<span style="color: #d69d85; line-height: 160%; box-sizing: content-box;">'100A'</span>)) <span style="color: #57a64a; font-style: italic; line-height: 160%; box-sizing: content-box;">// 100</span>
+    <span style="color: #57a64a; font-style: italic; line-height: 160%; box-sizing: content-box;">// parseInt 不能识别小数点 它有取整作用</span>
+    <span style="color: #4ec9b0; line-height: 160%; box-sizing: content-box;">parseInt</span>(<span style="color: #b8d7a3; line-height: 160%; box-sizing: content-box;">10.5</span>) <span style="color: #57a64a; font-style: italic; line-height: 160%; box-sizing: content-box;">// 10</span>
+    <span style="color: #4ec9b0; line-height: 160%; box-sizing: content-box;">parseInt</span>(<span style="color: #d69d85; line-height: 160%; box-sizing: content-box;">'10.5px'</span>) <span style="color: #57a64a; font-style: italic; line-height: 160%; box-sizing: content-box;">// 10</span>
+</code></pre>
+<h5 style="line-height: 160%; box-sizing: content-box; font-weight: 700; font-size: 16px; color: #333;">parseFloat</h5>
+<blockquote style="line-height: 160%; box-sizing: content-box; margin: 15px 0; border-left: 4px solid #ddd; padding: 0 15px; color: #777;">
+<ul style="line-height: 160%; box-sizing: content-box; display: block; list-style-type: disc; padding-left: 30px; margin: 6px 0 10px; color: #333; margin-top: 0; margin-bottom: 0;">
+<li style="line-height: 160%; box-sizing: content-box; position: relative;">从左向右进行转换，一旦遇到非有效字符 停止转化 然后将转换的数字字符以数字形式返回</li>
+<li style="line-height: 160%; box-sizing: content-box; position: relative;">如果左边第一个字符就是非有效字符，即直接返回NaN</li>
+<li style="line-height: 160%; box-sizing: content-box; position: relative;">可以识别小数 小数点后面的数字也会进行转化</li>
+</ul>
+</blockquote>
+<pre style="line-height: 160%; box-sizing: content-box; border: 0; border-radius: 0; margin: 2px 0 8px; background-color: #f5f7f8;"><code style="display: block; overflow-x: auto; background: #1e1e1e; line-height: 160%; box-sizing: content-box; border: 0; border-radius: 0; letter-spacing: -.3px; padding: 18px; color: #f4f4f4; white-space: pre-wrap;">    <span style="color: #4ec9b0; line-height: 160%; box-sizing: content-box;">parseFloat</span>(<span style="color: #b8d7a3; line-height: 160%; box-sizing: content-box;">10.5</span>) <span style="color: #57a64a; font-style: italic; line-height: 160%; box-sizing: content-box;">// 10.5</span>
+    <span style="color: #4ec9b0; line-height: 160%; box-sizing: content-box;">parseFloat</span>(<span style="color: #d69d85; line-height: 160%; box-sizing: content-box;">'10.5px'</span>) <span style="color: #57a64a; font-style: italic; line-height: 160%; box-sizing: content-box;">// 10.5</span>
+</code></pre>
+<h3 style="line-height: 160%; box-sizing: content-box; font-weight: 700; font-size: 27px; color: #333;">isNaN 检测一个数是不是NaN</h3>
+<blockquote style="line-height: 160%; box-sizing: content-box; margin: 15px 0; border-left: 4px solid #ddd; padding: 0 15px; color: #777;">
+<p style="line-height: 160%; box-sizing: content-box; margin: 10px 0; color: #333; margin-top: 0;">isNaN的返回值：</p>
+<ul style="line-height: 160%; box-sizing: content-box; display: block; list-style-type: disc; padding-left: 30px; margin: 6px 0 10px; color: #333; margin-bottom: 0;">
+<li style="line-height: 160%; box-sizing: content-box; position: relative;">true:说明这个值不是有效数字</li>
+<li style="line-height: 160%; box-sizing: content-box; position: relative;">false:说明这个值是有效数字</li>
+<li style="line-height: 160%; box-sizing: content-box; position: relative;">先将值使用Number方法转换，然后再进行判断</li>
+</ul>
+</blockquote>
+<pre style="line-height: 160%; box-sizing: content-box; border: 0; border-radius: 0; margin: 2px 0 8px; background-color: #f5f7f8;"><code style="display: block; overflow-x: auto; background: #1e1e1e; line-height: 160%; box-sizing: content-box; border: 0; border-radius: 0; letter-spacing: -.3px; padding: 18px; color: #f4f4f4; white-space: pre-wrap;">    <span style="color: #57a64a; font-style: italic; line-height: 160%; box-sizing: content-box;">// isNaN() 检测一个值是不是NaN(代表非数字)</span>
+    <span style="color: #57a64a; font-style: italic; line-height: 160%; box-sizing: content-box;">// isNaN(NaN) 如果是NaN 返回true 说明这个值不是有效数字</span>
+    <span style="color: #57a64a; font-style: italic; line-height: 160%; box-sizing: content-box;">// isNaN(1)  如果不是NaN 返回false 说明这个值是有效数字</span>
+
+    <span style="color: #57a64a; font-style: italic; line-height: 160%; box-sizing: content-box;">// isNaN()</span>
+    <span style="color: #57a64a; font-style: italic; line-height: 160%; box-sizing: content-box;">// 返回true 不是有效数字（NaN）</span>
+    <span style="color: #57a64a; font-style: italic; line-height: 160%; box-sizing: content-box;">// 返回false 是有效数字</span>
+
+    <span style="color: #57a64a; font-style: italic; line-height: 160%; box-sizing: content-box;">// isNaN(1 + undefined) // isNaN(1 + undefined) =&gt; isNaN(NaN) =&gt; true</span>
+
+    <span style="color: #57a64a; font-style: italic; line-height: 160%; box-sizing: content-box;">// isNaN先将值用Number()方法转换下 然后再判断是不是NaN</span>
+    <span style="color: #4ec9b0; line-height: 160%; box-sizing: content-box;">isNaN</span>(<span style="color: #d69d85; line-height: 160%; box-sizing: content-box;">'10'</span>) <span style="color: #57a64a; font-style: italic; line-height: 160%; box-sizing: content-box;">// isNaN(Number('10')) =&gt; isNaN(10) =&gt; false</span>
+    <span style="color: #4ec9b0; line-height: 160%; box-sizing: content-box;">isNaN</span>(<span style="color: #d69d85; line-height: 160%; box-sizing: content-box;">'10px'</span>) <span style="color: #57a64a; font-style: italic; line-height: 160%; box-sizing: content-box;">// isNaN(Number('10px')) =&gt; isNaN(NaN) =&gt; true</span>
+
+    <span style="color: #4ec9b0; line-height: 160%; box-sizing: content-box;">isNaN</span>(<span style="color: #569cd6; line-height: 160%; box-sizing: content-box;">null</span>) <span style="color: #57a64a; font-style: italic; line-height: 160%; box-sizing: content-box;">// isNaN(Number(null)) =&gt; isNaN(0) =&gt; false</span>
+    <span style="color: #4ec9b0; line-height: 160%; box-sizing: content-box;">isNaN</span>(<span style="color: #569cd6; line-height: 160%; box-sizing: content-box;">true</span>) <span style="color: #57a64a; font-style: italic; line-height: 160%; box-sizing: content-box;">// isNaN(Number(true)) =&gt; isNaN(1) =&gt; false</span>
+    <span style="color: #4ec9b0; line-height: 160%; box-sizing: content-box;">isNaN</span>([<span style="color: #b8d7a3; line-height: 160%; box-sizing: content-box;">1</span>]) <span style="color: #57a64a; font-style: italic; line-height: 160%; box-sizing: content-box;">// isNaN(Number([1])) =&gt; isNaN(1) =&gt; false</span>
+</code></pre>
+<h3 style="line-height: 160%; box-sizing: content-box; font-weight: 700; font-size: 27px; color: #333;">Boolean</h3>
+<blockquote style="line-height: 160%; box-sizing: content-box; margin: 15px 0; border-left: 4px solid #ddd; padding: 0 15px; color: #777;">
+<p style="line-height: 160%; box-sizing: content-box; margin: 10px 0; color: #333; margin-top: 0; margin-bottom: 0;">两个值：true false<br/>
+只有 0 ‘’ undefined null NaN转换成布尔值为false，其余的都为true<br/>
+！ 取反<br/>
+！！ 取反再取反</p>
+</blockquote>
+<h3 style="line-height: 160%; box-sizing: content-box; font-weight: 700; font-size: 27px; color: #333;">object 对象</h3>
+<h4 style="line-height: 160%; box-sizing: content-box; font-size: 20px; color: #333;">创建一个对象</h4>
+<blockquote style="line-height: 160%; box-sizing: content-box; margin: 15px 0; border-left: 4px solid #ddd; padding: 0 15px; color: #777;">
+<ul style="line-height: 160%; box-sizing: content-box; display: block; list-style-type: disc; padding-left: 30px; margin: 6px 0 10px; color: #333; margin-top: 0; margin-bottom: 0;">
+<li style="line-height: 160%; box-sizing: content-box; position: relative;">var 对象名 = {属性名:属性值}</li>
+<li style="line-height: 160%; box-sizing: content-box; position: relative;">属性名:属性值 称之为 键值对 key:value</li>
+<li style="line-height: 160%; box-sizing: content-box; position: relative;">键值对中间用逗号隔开</li>
+</ul>
+</blockquote>
+<h4 style="line-height: 160%; box-sizing: content-box; font-size: 20px; color: #333;">获取属性值的两种方式：</h4>
+<blockquote style="line-height: 160%; box-sizing: content-box; margin: 15px 0; border-left: 4px solid #ddd; padding: 0 15px; color: #777;">
+<ul style="line-height: 160%; box-sizing: content-box; display: block; list-style-type: disc; padding-left: 30px; margin: 6px 0 10px; color: #333; margin-top: 0; margin-bottom: 0;">
+<li style="line-height: 160%; box-sizing: content-box; position: relative;">对象名.属性名:不支持数字的属性名</li>
+<li style="line-height: 160%; box-sizing: content-box; position: relative;">对象名['属性名']:属性名需要加引号，如果不加引号会把属性名当做一个变量来处理</li>
+</ul>
+</blockquote>
+<h4 style="line-height: 160%; box-sizing: content-box; font-size: 20px; color: #333;">增加属性</h4>
+<blockquote style="line-height: 160%; box-sizing: content-box; margin: 15px 0; border-left: 4px solid #ddd; padding: 0 15px; color: #777;">
+<ul style="line-height: 160%; box-sizing: content-box; display: block; list-style-type: disc; padding-left: 30px; margin: 6px 0 10px; color: #333; margin-top: 0; margin-bottom: 0;">
+<li style="line-height: 160%; box-sizing: content-box; position: relative;">对象名.属性名 = 值</li>
+<li style="line-height: 160%; box-sizing: content-box; position: relative;">对象名[属性名] = 值</li>
+</ul>
+</blockquote>
+<h4 style="line-height: 160%; box-sizing: content-box; font-size: 20px; color: #333;">修改属性</h4>
+<blockquote style="line-height: 160%; box-sizing: content-box; margin: 15px 0; border-left: 4px solid #ddd; padding: 0 15px; color: #777;">
+<ul style="line-height: 160%; box-sizing: content-box; display: block; list-style-type: disc; padding-left: 30px; margin: 6px 0 10px; color: #333; margin-top: 0; margin-bottom: 0;">
+<li style="line-height: 160%; box-sizing: content-box; position: relative;">
+<p style="line-height: 160%; box-sizing: content-box; color: #333; margin: 0;">对象名.属性名 = 值</p>
+</li>
+<li style="line-height: 160%; box-sizing: content-box; position: relative;">
+<p style="line-height: 160%; box-sizing: content-box; color: #333; margin: 0;">对象名[属性名] = 值</p>
+</li>
+<li style="line-height: 160%; box-sizing: content-box; position: relative;">
+<p style="line-height: 160%; box-sizing: content-box; color: #333; margin: 0;">注意如果创建的对象里面有要修改这个属性名 就是修改这个属性名的属性值 如果创建的对象里面没有要修改的这个属性名 那么就是给当前对象增加一个属性</p>
+</li>
+</ul>
+</blockquote>
+<h4 style="line-height: 160%; box-sizing: content-box; font-size: 20px; color: #333;">删除属性：</h4>
+<h5 style="line-height: 160%; box-sizing: content-box; font-weight: 700; font-size: 16px; color: #333;">真删除:从当前对象里面删除这个属性</h5>
+<blockquote style="line-height: 160%; box-sizing: content-box; margin: 15px 0; border-left: 4px solid #ddd; padding: 0 15px; color: #777;">
+<ul style="line-height: 160%; box-sizing: content-box; display: block; list-style-type: disc; padding-left: 30px; margin: 6px 0 10px; color: #333; margin-top: 0; margin-bottom: 0;">
+<li style="line-height: 160%; box-sizing: content-box; position: relative;">delete 对象名.属性名</li>
+<li style="line-height: 160%; box-sizing: content-box; position: relative;">delete 对象名[属性名]</li>
+</ul>
+</blockquote>
+<h5 style="line-height: 160%; box-sizing: content-box; font-weight: 700; font-size: 16px; color: #333;">假删除：在当前对象里面找到这个属性 重新赋值为null</h5>
+<blockquote style="line-height: 160%; box-sizing: content-box; margin: 15px 0; border-left: 4px solid #ddd; padding: 0 15px; color: #777;">
+<ul style="line-height: 160%; box-sizing: content-box; display: block; list-style-type: disc; padding-left: 30px; margin: 6px 0 10px; color: #333; margin-top: 0; margin-bottom: 0;">
+<li style="line-height: 160%; box-sizing: content-box; position: relative;">对象名.属性名 = null</li>
+<li style="line-height: 160%; box-sizing: content-box; position: relative;">对象名[属性名] = null</li>
+</ul>
+</blockquote>
+</div><center style="display:none !important;visibility:collapse !important;height:0 !important;white-space:nowrap;width:100%;overflow:hidden">%23%23%23%20%E6%95%B0%E5%AD%97%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2%20%20Number%0A%20%23%23%23%23%23%20%E5%AD%97%E7%AC%A6%E4%B8%B2%E8%BD%AC%E6%95%B0%E5%AD%97%0A%3E%20-%20%E6%96%B9%E6%B3%95%EF%BC%9ANumber(%E2%80%9CString%E2%80%9D)%20%E5%BC%BA%E5%88%B6%E8%BD%AC%E6%8D%A2%0A%3E%20-%20Number('')%20-%3E%200%0A%3E%20-%20Number(%2210px%22)%20-%3E%20NaN%0A%3E%20-%20%E5%8F%AA%E8%A6%81%E5%AD%97%E7%AC%A6%E4%B8%B2%E4%B8%AD%E5%87%BA%E7%8E%B0%E9%9D%9E%E6%9C%89%E6%95%88%E5%AD%97%E7%AC%A6%EF%BC%8C%E7%9B%B4%E6%8E%A5%E8%BF%94%E5%9B%9ENaN%0A%0A%23%23%23%23%23%20%E5%B8%83%E5%B0%94%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%95%B0%E5%AD%97%20%0A%3E%20-%20Number(true)%20-%3E%201%0A%3E%20-%20Number(flase)%20-%3E%200%0A%0A%0A%23%23%23%23%23%20null%20%E8%BD%AC%E6%95%B0%E5%AD%97%20%0A%3E%20-%20Number(null)%20-%3E%200%0A%0A%23%23%23%23%23%20undefined%20%0A%3E%20-%20Number(undefined)%20-%3E%20NaN%0A%0A%0A%23%23%23%23%23%20%E6%95%B0%E7%BB%84%20%E8%BD%AC%E6%95%B0%E5%AD%97%20%20%0A%3E%20-%20%E5%85%88%E5%B0%86%E6%95%B0%E7%BB%84%E8%BD%AC%E6%8D%A2%E6%88%90%E5%AD%97%E7%AC%A6%E4%B8%B2%EF%BC%8C%E7%84%B6%E5%90%8E%E5%86%8D%E8%BD%AC%E6%8D%A2%E6%88%90%E6%95%B0%E5%AD%97%0A%3E%20-%20Number(%5B%5D)%20%2F%2F%20Number(%5B%5D)%20%3D%3E%20Number('')%20%3D%3E%200%0A%3E%20-%20Number(%5B100%5D)%20%2F%2F%20%20%3D%3E%20Number('100')%20%3D%3E%20100%0A%3E%20-%20Number(%5B10%2C%2020%2C%2030%5D)%20%2F%2F%20Number('10%2C%2020%2C%2030')%20%3D%3E%20NaN%0A%3E%20-%20Number(%5Bundefined%5D)%20%3D%3E%200%0A%0A%0A%23%23%23%23%23%20%E5%AF%B9%E8%B1%A1%20%E8%BD%AC%E6%95%B0%E5%AD%97%20%0A%3E%20-%20Number(%7B%7D)%20%3D%3E%20NaN%0A%0A%23%23%23%23%23%20%E6%AD%A3%E5%88%99%20%E8%BD%AC%E6%95%B0%E5%AD%97%20%0A%3E%20-%20Number(%2F%5E%5Cd%2B%24%2F)%20%3D%3E%20NaN%0A%0A%23%23%23%23%23%20%E5%87%BD%E6%95%B0%20%E8%BD%AC%E6%95%B0%E5%AD%97%20%0A%3E%20-%20Number(function()%7B%7D)%20%3D%3E%20NaN%0A%0A%0A%20%0A%23%23%23%20%E6%95%B0%E5%AD%97%E8%BD%AC%E6%8D%A2%20parseInt%20%20parseFloat%0A%0A%0A%23%23%23%23%23%20parseInt%0A%3E%20-%20%E4%BB%8E%E5%B7%A6%E5%90%91%E5%8F%B3%E8%BF%9B%E8%A1%8C%E8%BD%AC%E6%8D%A2%EF%BC%8C%E4%B8%80%E6%97%A6%E9%81%87%E5%88%B0%E9%9D%9E%E6%9C%89%E6%95%88%E5%AD%97%E7%AC%A6%20%E5%81%9C%E6%AD%A2%E8%BD%AC%E5%8C%96%20%E7%84%B6%E5%90%8E%E5%B0%86%E8%BD%AC%E6%8D%A2%E7%9A%84%E6%95%B0%E5%AD%97%E5%AD%97%E7%AC%A6%E4%BB%A5%E6%95%B0%E5%AD%97%E5%BD%A2%E5%BC%8F%E8%BF%94%E5%9B%9E%0A%3E%20-%20%E5%A6%82%E6%9E%9C%E5%B7%A6%E8%BE%B9%E7%AC%AC%E4%B8%80%E4%B8%AA%E5%AD%97%E7%AC%A6%E5%B0%B1%E6%98%AF%E9%9D%9E%E6%9C%89%E6%95%88%E5%AD%97%E7%AC%A6%EF%BC%8C%E5%8D%B3%E7%9B%B4%E6%8E%A5%E8%BF%94%E5%9B%9ENaN%0A%3E%20-%20%E4%B8%8D%E8%83%BD%E8%AF%86%E5%88%AB%E5%B0%8F%E6%95%B0%E7%82%B9%20%E6%9C%89%E5%8F%96%E6%95%B4%E6%95%B0%E7%9A%84%E4%BD%9C%E7%94%A8%20%E5%B0%8F%E6%95%B0%E7%82%B9%E5%90%8E%E9%9D%A2%E7%9A%84%E6%9C%89%E6%95%88%E6%95%B0%E5%AD%97%E5%BF%BD%E7%95%A5%E4%B8%8D%E8%BD%AC%E6%8D%A2%0A%60%60%60javascript%0A%20%20%20%20console.log(parseInt('A100'))%20%2F%2F%20NaN%0A%20%20%20%20console.log(parseInt('1A00'))%20%2F%2F%201%0A%20%20%20%20console.log(parseInt('10A0'))%20%2F%2F%2010%0A%20%20%20%20console.log(parseInt('100A'))%20%2F%2F%20100%0A%20%20%20%20%2F%2F%20parseInt%20%E4%B8%8D%E8%83%BD%E8%AF%86%E5%88%AB%E5%B0%8F%E6%95%B0%E7%82%B9%20%E5%AE%83%E6%9C%89%E5%8F%96%E6%95%B4%E4%BD%9C%E7%94%A8%0A%20%20%20%20parseInt(10.5)%20%2F%2F%2010%0A%20%20%20%20parseInt('10.5px')%20%2F%2F%2010%0A%60%60%60%0A%0A%23%23%23%23%23%20parseFloat%0A%3E%20-%20%E4%BB%8E%E5%B7%A6%E5%90%91%E5%8F%B3%E8%BF%9B%E8%A1%8C%E8%BD%AC%E6%8D%A2%EF%BC%8C%E4%B8%80%E6%97%A6%E9%81%87%E5%88%B0%E9%9D%9E%E6%9C%89%E6%95%88%E5%AD%97%E7%AC%A6%20%E5%81%9C%E6%AD%A2%E8%BD%AC%E5%8C%96%20%E7%84%B6%E5%90%8E%E5%B0%86%E8%BD%AC%E6%8D%A2%E7%9A%84%E6%95%B0%E5%AD%97%E5%AD%97%E7%AC%A6%E4%BB%A5%E6%95%B0%E5%AD%97%E5%BD%A2%E5%BC%8F%E8%BF%94%E5%9B%9E%0A%3E%20-%20%E5%A6%82%E6%9E%9C%E5%B7%A6%E8%BE%B9%E7%AC%AC%E4%B8%80%E4%B8%AA%E5%AD%97%E7%AC%A6%E5%B0%B1%E6%98%AF%E9%9D%9E%E6%9C%89%E6%95%88%E5%AD%97%E7%AC%A6%EF%BC%8C%E5%8D%B3%E7%9B%B4%E6%8E%A5%E8%BF%94%E5%9B%9ENaN%0A%3E%20-%20%E5%8F%AF%E4%BB%A5%E8%AF%86%E5%88%AB%E5%B0%8F%E6%95%B0%20%E5%B0%8F%E6%95%B0%E7%82%B9%E5%90%8E%E9%9D%A2%E7%9A%84%E6%95%B0%E5%AD%97%E4%B9%9F%E4%BC%9A%E8%BF%9B%E8%A1%8C%E8%BD%AC%E5%8C%96%0A%0A%60%60%60javascript%0A%20%20%20%20parseFloat(10.5)%20%2F%2F%2010.5%0A%20%20%20%20parseFloat('10.5px')%20%2F%2F%2010.5%0A%60%60%60%0A%23%23%23%20isNaN%20%E6%A3%80%E6%B5%8B%E4%B8%80%E4%B8%AA%E6%95%B0%E6%98%AF%E4%B8%8D%E6%98%AFNaN%0A%3E%20isNaN%E7%9A%84%E8%BF%94%E5%9B%9E%E5%80%BC%EF%BC%9A%0A%3E%20%0A%3E%20-%20true%3A%E8%AF%B4%E6%98%8E%E8%BF%99%E4%B8%AA%E5%80%BC%E4%B8%8D%E6%98%AF%E6%9C%89%E6%95%88%E6%95%B0%E5%AD%97%0A%3E%20-%20false%3A%E8%AF%B4%E6%98%8E%E8%BF%99%E4%B8%AA%E5%80%BC%E6%98%AF%E6%9C%89%E6%95%88%E6%95%B0%E5%AD%97%0A%3E%20-%20%E5%85%88%E5%B0%86%E5%80%BC%E4%BD%BF%E7%94%A8Number%E6%96%B9%E6%B3%95%E8%BD%AC%E6%8D%A2%EF%BC%8C%E7%84%B6%E5%90%8E%E5%86%8D%E8%BF%9B%E8%A1%8C%E5%88%A4%E6%96%AD%0A%0A%60%60%60javascript%0A%20%20%20%20%2F%2F%20isNaN()%20%E6%A3%80%E6%B5%8B%E4%B8%80%E4%B8%AA%E5%80%BC%E6%98%AF%E4%B8%8D%E6%98%AFNaN(%E4%BB%A3%E8%A1%A8%E9%9D%9E%E6%95%B0%E5%AD%97)%0A%20%20%20%20%2F%2F%20isNaN(NaN)%20%E5%A6%82%E6%9E%9C%E6%98%AFNaN%20%E8%BF%94%E5%9B%9Etrue%20%E8%AF%B4%E6%98%8E%E8%BF%99%E4%B8%AA%E5%80%BC%E4%B8%8D%E6%98%AF%E6%9C%89%E6%95%88%E6%95%B0%E5%AD%97%0A%20%20%20%20%2F%2F%20isNaN(1)%20%20%E5%A6%82%E6%9E%9C%E4%B8%8D%E6%98%AFNaN%20%E8%BF%94%E5%9B%9Efalse%20%E8%AF%B4%E6%98%8E%E8%BF%99%E4%B8%AA%E5%80%BC%E6%98%AF%E6%9C%89%E6%95%88%E6%95%B0%E5%AD%97%0A%0A%20%20%20%20%2F%2F%20isNaN()%0A%20%20%20%20%2F%2F%20%E8%BF%94%E5%9B%9Etrue%20%E4%B8%8D%E6%98%AF%E6%9C%89%E6%95%88%E6%95%B0%E5%AD%97%EF%BC%88NaN%EF%BC%89%0A%20%20%20%20%2F%2F%20%E8%BF%94%E5%9B%9Efalse%20%E6%98%AF%E6%9C%89%E6%95%88%E6%95%B0%E5%AD%97%0A%0A%20%20%20%20%2F%2F%20isNaN(1%20%2B%20undefined)%20%2F%2F%20isNaN(1%20%2B%20undefined)%20%3D%3E%20isNaN(NaN)%20%3D%3E%20true%0A%0A%20%20%20%20%2F%2F%20isNaN%E5%85%88%E5%B0%86%E5%80%BC%E7%94%A8Number()%E6%96%B9%E6%B3%95%E8%BD%AC%E6%8D%A2%E4%B8%8B%20%E7%84%B6%E5%90%8E%E5%86%8D%E5%88%A4%E6%96%AD%E6%98%AF%E4%B8%8D%E6%98%AFNaN%0A%20%20%20%20isNaN('10')%20%2F%2F%20isNaN(Number('10'))%20%3D%3E%20isNaN(10)%20%3D%3E%20false%0A%20%20%20%20isNaN('10px')%20%2F%2F%20isNaN(Number('10px'))%20%3D%3E%20isNaN(NaN)%20%3D%3E%20true%0A%0A%20%20%20%20isNaN(null)%20%2F%2F%20isNaN(Number(null))%20%3D%3E%20isNaN(0)%20%3D%3E%20false%0A%20%20%20%20isNaN(true)%20%2F%2F%20isNaN(Number(true))%20%3D%3E%20isNaN(1)%20%3D%3E%20false%0A%20%20%20%20isNaN(%5B1%5D)%20%2F%2F%20isNaN(Number(%5B1%5D))%20%3D%3E%20isNaN(1)%20%3D%3E%20false%0A%60%60%60%0A%23%23%23%20Boolean%0A%3E%20%E4%B8%A4%E4%B8%AA%E5%80%BC%EF%BC%9Atrue%20false%0A%3E%20%E5%8F%AA%E6%9C%89%200%20%E2%80%98%E2%80%99%20undefined%20null%20NaN%E8%BD%AC%E6%8D%A2%E6%88%90%E5%B8%83%E5%B0%94%E5%80%BC%E4%B8%BAfalse%EF%BC%8C%E5%85%B6%E4%BD%99%E7%9A%84%E9%83%BD%E4%B8%BAtrue%0A%3E%20%EF%BC%81%20%E5%8F%96%E5%8F%8D%0A%3E%20%EF%BC%81%EF%BC%81%20%E5%8F%96%E5%8F%8D%E5%86%8D%E5%8F%96%E5%8F%8D%0A%0A%23%23%23%20object%20%E5%AF%B9%E8%B1%A1%0A%0A%23%23%23%23%20%E5%88%9B%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%AF%B9%E8%B1%A1%0A%3E%20-%20var%20%E5%AF%B9%E8%B1%A1%E5%90%8D%20%3D%20%7B%E5%B1%9E%E6%80%A7%E5%90%8D%3A%E5%B1%9E%E6%80%A7%E5%80%BC%7D%0A%3E%20-%20%E5%B1%9E%E6%80%A7%E5%90%8D%3A%E5%B1%9E%E6%80%A7%E5%80%BC%20%E7%A7%B0%E4%B9%8B%E4%B8%BA%20%E9%94%AE%E5%80%BC%E5%AF%B9%20key%3Avalue%0A%3E%20-%20%E9%94%AE%E5%80%BC%E5%AF%B9%E4%B8%AD%E9%97%B4%E7%94%A8%E9%80%97%E5%8F%B7%E9%9A%94%E5%BC%80%0A%0A%0A%23%23%23%23%20%E8%8E%B7%E5%8F%96%E5%B1%9E%E6%80%A7%E5%80%BC%E7%9A%84%E4%B8%A4%E7%A7%8D%E6%96%B9%E5%BC%8F%EF%BC%9A%0A%3E%20-%20%E5%AF%B9%E8%B1%A1%E5%90%8D.%E5%B1%9E%E6%80%A7%E5%90%8D%3A%E4%B8%8D%E6%94%AF%E6%8C%81%E6%95%B0%E5%AD%97%E7%9A%84%E5%B1%9E%E6%80%A7%E5%90%8D%0A%3E%20-%20%E5%AF%B9%E8%B1%A1%E5%90%8D%5B'%E5%B1%9E%E6%80%A7%E5%90%8D'%5D%3A%E5%B1%9E%E6%80%A7%E5%90%8D%E9%9C%80%E8%A6%81%E5%8A%A0%E5%BC%95%E5%8F%B7%EF%BC%8C%E5%A6%82%E6%9E%9C%E4%B8%8D%E5%8A%A0%E5%BC%95%E5%8F%B7%E4%BC%9A%E6%8A%8A%E5%B1%9E%E6%80%A7%E5%90%8D%E5%BD%93%E5%81%9A%E4%B8%80%E4%B8%AA%E5%8F%98%E9%87%8F%E6%9D%A5%E5%A4%84%E7%90%86%0A%20%0A%23%23%23%23%20%E5%A2%9E%E5%8A%A0%E5%B1%9E%E6%80%A7%0A%3E%20-%20%E5%AF%B9%E8%B1%A1%E5%90%8D.%E5%B1%9E%E6%80%A7%E5%90%8D%20%3D%20%E5%80%BC%0A%3E%20-%20%E5%AF%B9%E8%B1%A1%E5%90%8D%5B%E5%B1%9E%E6%80%A7%E5%90%8D%5D%20%3D%20%E5%80%BC%0A%0A%23%23%23%23%20%E4%BF%AE%E6%94%B9%E5%B1%9E%E6%80%A7%0A%3E%20-%20%E5%AF%B9%E8%B1%A1%E5%90%8D.%E5%B1%9E%E6%80%A7%E5%90%8D%20%3D%20%E5%80%BC%20%0A%3E%20-%20%E5%AF%B9%E8%B1%A1%E5%90%8D%5B%E5%B1%9E%E6%80%A7%E5%90%8D%5D%20%3D%20%E5%80%BC%0A%3E%20%0A%3E%20-%20%E6%B3%A8%E6%84%8F%E5%A6%82%E6%9E%9C%E5%88%9B%E5%BB%BA%E7%9A%84%E5%AF%B9%E8%B1%A1%E9%87%8C%E9%9D%A2%E6%9C%89%E8%A6%81%E4%BF%AE%E6%94%B9%E8%BF%99%E4%B8%AA%E5%B1%9E%E6%80%A7%E5%90%8D%20%E5%B0%B1%E6%98%AF%E4%BF%AE%E6%94%B9%E8%BF%99%E4%B8%AA%E5%B1%9E%E6%80%A7%E5%90%8D%E7%9A%84%E5%B1%9E%E6%80%A7%E5%80%BC%20%E5%A6%82%E6%9E%9C%E5%88%9B%E5%BB%BA%E7%9A%84%E5%AF%B9%E8%B1%A1%E9%87%8C%E9%9D%A2%E6%B2%A1%E6%9C%89%E8%A6%81%E4%BF%AE%E6%94%B9%E7%9A%84%E8%BF%99%E4%B8%AA%E5%B1%9E%E6%80%A7%E5%90%8D%20%E9%82%A3%E4%B9%88%E5%B0%B1%E6%98%AF%E7%BB%99%E5%BD%93%E5%89%8D%E5%AF%B9%E8%B1%A1%E5%A2%9E%E5%8A%A0%E4%B8%80%E4%B8%AA%E5%B1%9E%E6%80%A7%0A%0A%23%23%23%23%20%E5%88%A0%E9%99%A4%E5%B1%9E%E6%80%A7%EF%BC%9A%0A%23%23%23%23%23%20%E7%9C%9F%E5%88%A0%E9%99%A4%3A%E4%BB%8E%E5%BD%93%E5%89%8D%E5%AF%B9%E8%B1%A1%E9%87%8C%E9%9D%A2%E5%88%A0%E9%99%A4%E8%BF%99%E4%B8%AA%E5%B1%9E%E6%80%A7%0A%3E%20-%20delete%20%E5%AF%B9%E8%B1%A1%E5%90%8D.%E5%B1%9E%E6%80%A7%E5%90%8D%0A%3E%20-%20delete%20%E5%AF%B9%E8%B1%A1%E5%90%8D%5B%E5%B1%9E%E6%80%A7%E5%90%8D%5D%0A%20%0A%23%23%23%23%23%20%E5%81%87%E5%88%A0%E9%99%A4%EF%BC%9A%E5%9C%A8%E5%BD%93%E5%89%8D%E5%AF%B9%E8%B1%A1%E9%87%8C%E9%9D%A2%E6%89%BE%E5%88%B0%E8%BF%99%E4%B8%AA%E5%B1%9E%E6%80%A7%20%E9%87%8D%E6%96%B0%E8%B5%8B%E5%80%BC%E4%B8%BAnull%20%0A%3E%20-%20%E5%AF%B9%E8%B1%A1%E5%90%8D.%E5%B1%9E%E6%80%A7%E5%90%8D%20%3D%20null%0A%3E%20-%20%E5%AF%B9%E8%B1%A1%E5%90%8D%5B%E5%B1%9E%E6%80%A7%E5%90%8D%5D%20%3D%20null%0A</center></body></html>

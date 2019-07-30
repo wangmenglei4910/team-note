@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/><meta name="exporter-version" content="Evernote Mac 9.0.1 (457749)"/><meta name="altitude" content="42.49417495727539"/><meta name="author" content="冯宁宁"/><meta name="created" content="2019-02-20 01:56:37 +0000"/><meta name="latitude" content="40.0796821508253"/><meta name="longitude" content="116.354434920294"/><meta name="source" content="desktop.mac"/><meta name="updated" content="2019-04-03 14:17:21 +0000"/><meta name="content-class" content="yinxiang.markdown"/><title>week1 -- day3</title></head><body><div style="font-size: 14px; margin: 0; padding: 0; width: 100%;"><h2 style="line-height: 160%; box-sizing: content-box; font-weight: 700; font-size: 34px; border-bottom: 1px solid #dbdbdb; color: #333;">if(){}else{}条件判断语句</h2>
+<blockquote style="line-height: 160%; box-sizing: content-box; margin: 15px 0; border-left: 4px solid #ddd; padding: 0 15px; color: #777;">
+<p style="line-height: 160%; box-sizing: content-box; margin: 10px 0; color: #333; margin-top: 0; margin-bottom: 0;">语法：if(条件){条件成立的执行语句}else{条件不成立的执行语句}</p>
+</blockquote>
+<pre style="line-height: 160%; box-sizing: content-box; border: 0; border-radius: 0; margin: 2px 0 8px; background-color: #f5f7f8;"><code style="display: block; overflow-x: auto; background: #1e1e1e; line-height: 160%; box-sizing: content-box; border: 0; border-radius: 0; letter-spacing: -.3px; padding: 18px; color: #f4f4f4; white-space: pre-wrap;">    <span style="color: #57a64a; font-style: italic; line-height: 160%; box-sizing: content-box;">/*
+        语法：
+            if(条件判断){
+                // true 条件成立
+                执行主体
+            }else if(条件判断){
+                // true 条件成立
+            }else{
+                // false 条件不成立
+                执行主体
+            }
+    */</span>
+    
+    <span style="color: #569cd6; line-height: 160%; box-sizing: content-box;">var</span> text =  <span style="color: #d69d85; line-height: 160%; box-sizing: content-box;">"黄灯"</span>
+    <span style="color: #569cd6; line-height: 160%; box-sizing: content-box;">if</span>(text == <span style="color: #d69d85; line-height: 160%; box-sizing: content-box;">"绿灯"</span>){
+        <span style="color: #4ec9b0; line-height: 160%; box-sizing: content-box;">console</span>.log(<span style="color: #d69d85; line-height: 160%; box-sizing: content-box;">"当前是绿灯，green"</span>)
+    }<span style="color: #569cd6; line-height: 160%; box-sizing: content-box;">else</span> <span style="color: #569cd6; line-height: 160%; box-sizing: content-box;">if</span>(text == <span style="color: #d69d85; line-height: 160%; box-sizing: content-box;">"黄灯"</span>){
+        <span style="color: #4ec9b0; line-height: 160%; box-sizing: content-box;">console</span>.log(<span style="color: #d69d85; line-height: 160%; box-sizing: content-box;">"当前是黄灯"</span>，yellow)
+    }<span style="color: #569cd6; line-height: 160%; box-sizing: content-box;">else</span>{
+        <span style="color: #4ec9b0; line-height: 160%; box-sizing: content-box;">console</span>.log(<span style="color: #d69d85; line-height: 160%; box-sizing: content-box;">"当前不是红灯，red"</span>)
+    }
+    
+    
+     <span style="color: #569cd6; line-height: 160%; box-sizing: content-box;">var</span> age = <span style="color: #b8d7a3; line-height: 160%; box-sizing: content-box;">5</span>;
+    <span style="color: #569cd6; line-height: 160%; box-sizing: content-box;">if</span>(age == <span style="color: #b8d7a3; line-height: 160%; box-sizing: content-box;">1</span>){
+        <span style="color: #4ec9b0; line-height: 160%; box-sizing: content-box;">console</span>.log(<span style="color: #b8d7a3; line-height: 160%; box-sizing: content-box;">1</span>)
+    }<span style="color: #569cd6; line-height: 160%; box-sizing: content-box;">else</span> <span style="color: #569cd6; line-height: 160%; box-sizing: content-box;">if</span>(age == <span style="color: #b8d7a3; line-height: 160%; box-sizing: content-box;">10</span>){
+        <span style="color: #4ec9b0; line-height: 160%; box-sizing: content-box;">console</span>.log(<span style="color: #b8d7a3; line-height: 160%; box-sizing: content-box;">10</span>)
+    }<span style="color: #569cd6; line-height: 160%; box-sizing: content-box;">else</span> <span style="color: #569cd6; line-height: 160%; box-sizing: content-box;">if</span>(age == <span style="color: #b8d7a3; line-height: 160%; box-sizing: content-box;">20</span>){
+        <span style="color: #4ec9b0; line-height: 160%; box-sizing: content-box;">console</span>.log(<span style="color: #b8d7a3; line-height: 160%; box-sizing: content-box;">20</span>)
+    }<span style="color: #569cd6; line-height: 160%; box-sizing: content-box;">else</span>{
+        <span style="color: #4ec9b0; line-height: 160%; box-sizing: content-box;">console</span>.log(<span style="color: #d69d85; line-height: 160%; box-sizing: content-box;">"hello world"</span>)
+    }
+</code></pre>
+<h2 style="line-height: 160%; box-sizing: content-box; font-weight: 700; font-size: 34px; border-bottom: 1px solid #dbdbdb; color: #333;">switch 语句</h2>
+<pre style="line-height: 160%; box-sizing: content-box; border: 0; border-radius: 0; margin: 2px 0 8px; background-color: #f5f7f8;"><code style="display: block; overflow-x: auto; background: #1e1e1e; line-height: 160%; box-sizing: content-box; border: 0; border-radius: 0; letter-spacing: -.3px; padding: 18px; color: #f4f4f4; white-space: pre-wrap;">  <span style="color: #57a64a; font-style: italic; line-height: 160%; box-sizing: content-box;">/*
+    语法：
+    switch(值/变量){
+       case 条件1：条件成立执行的代码 每一个条件语句结束都要加break
+          break;
+       case 条件2: 条件成立执行的代码 每一个条件语句结束都要加break
+          break;
+       case 条件3: 条件成立执行的代码 每一个条件语句结束都要加break
+          break;
+       default: 以上条件都不成立的时候 执行default语句 相当于else
+     }
+  */</span>  
+</code></pre>
+<h2 style="line-height: 160%; box-sizing: content-box; font-weight: 700; font-size: 34px; border-bottom: 1px solid #dbdbdb; color: #333;">逻辑运算符</h2>
+<h3 style="line-height: 160%; box-sizing: content-box; font-weight: 700; font-size: 27px; color: #333;">逻辑或 || 或者</h3>
+<blockquote style="line-height: 160%; box-sizing: content-box; margin: 15px 0; border-left: 4px solid #ddd; padding: 0 15px; color: #777;">
+<p style="line-height: 160%; box-sizing: content-box; margin: 10px 0; color: #333; margin-top: 0; margin-bottom: 0;">只有一个条件成立 就会执行代码块</p>
+</blockquote>
+<h3 style="line-height: 160%; box-sizing: content-box; font-weight: 700; font-size: 27px; color: #333;">逻辑与 &amp;&amp; 并且</h3>
+<blockquote style="line-height: 160%; box-sizing: content-box; margin: 15px 0; border-left: 4px solid #ddd; padding: 0 15px; color: #777;">
+<p style="line-height: 160%; box-sizing: content-box; margin: 10px 0; color: #333; margin-top: 0; margin-bottom: 0;">所有的条件都成立 才会执行代码块</p>
+</blockquote>
+<h2 style="line-height: 160%; box-sizing: content-box; font-weight: 700; font-size: 34px; border-bottom: 1px solid #dbdbdb; color: #333;">%取模</h2>
+<blockquote style="line-height: 160%; box-sizing: content-box; margin: 15px 0; border-left: 4px solid #ddd; padding: 0 15px; color: #777;">
+<p style="line-height: 160%; box-sizing: content-box; margin: 10px 0; color: #333; margin-top: 0; margin-bottom: 0;">取余数 获取余数</p>
+</blockquote>
+<h2 style="line-height: 160%; box-sizing: content-box; font-weight: 700; font-size: 34px; border-bottom: 1px solid #dbdbdb; color: #333;">三元运算符</h2>
+<pre style="line-height: 160%; box-sizing: content-box; border: 0; border-radius: 0; margin: 2px 0 8px; background-color: #f5f7f8;"><code style="display: block; overflow-x: auto; background: #1e1e1e; line-height: 160%; box-sizing: content-box; border: 0; border-radius: 0; letter-spacing: -.3px; padding: 18px; color: #f4f4f4; white-space: pre-wrap;">    <span style="color: #57a64a; font-style: italic; line-height: 160%; box-sizing: content-box;">/*
+        语法：
+           判断条件？true执行的语句 ： false执行的语句
+    */</span>
+    <span style="color: #b8d7a3; line-height: 160%; box-sizing: content-box;">2</span> &lt; <span style="color: #b8d7a3; line-height: 160%; box-sizing: content-box;">5</span> ? <span style="color: #4ec9b0; line-height: 160%; box-sizing: content-box;">console</span>.log(<span style="color: #d69d85; line-height: 160%; box-sizing: content-box;">"2小于5"</span>): <span style="color: #4ec9b0; line-height: 160%; box-sizing: content-box;">console</span>.log(<span style="color: #d69d85; line-height: 160%; box-sizing: content-box;">"2大于5"</span>)
+</code></pre>
+<h2 style="line-height: 160%; box-sizing: content-box; font-weight: 700; font-size: 34px; border-bottom: 1px solid #dbdbdb; color: #333;">取值逻辑运算符</h2>
+<h3 style="line-height: 160%; box-sizing: content-box; font-weight: 700; font-size: 27px; color: #333;">逻辑或</h3>
+<blockquote style="line-height: 160%; box-sizing: content-box; margin: 15px 0; border-left: 4px solid #ddd; padding: 0 15px; color: #777;">
+<p style="line-height: 160%; box-sizing: content-box; margin: 10px 0; color: #333; margin-top: 0;">1.先看左边值 哪一个为真 就返回哪一个</p>
+<p style="line-height: 160%; box-sizing: content-box; margin: 10px 0; color: #333;">2.如果都为true 返回第一个</p>
+<p style="line-height: 160%; box-sizing: content-box; margin: 10px 0; color: #333; margin-bottom: 0;">3.如果都为false 就返回最后一个</p>
+</blockquote>
+<h3 style="line-height: 160%; box-sizing: content-box; font-weight: 700; font-size: 27px; color: #333;">逻辑与</h3>
+<blockquote style="line-height: 160%; box-sizing: content-box; margin: 15px 0; border-left: 4px solid #ddd; padding: 0 15px; color: #777;">
+<p style="line-height: 160%; box-sizing: content-box; margin: 10px 0; color: #333; margin-top: 0;">1.先看左边值 哪一个为假 就返回哪一个</p>
+<p style="line-height: 160%; box-sizing: content-box; margin: 10px 0; color: #333;">2.如果都为true 返回最后一个</p>
+<p style="line-height: 160%; box-sizing: content-box; margin: 10px 0; color: #333; margin-bottom: 0;">3.如果都为false 返回第一个</p>
+</blockquote>
+<h2 style="line-height: 160%; box-sizing: content-box; font-weight: 700; font-size: 34px; border-bottom: 1px solid #dbdbdb; color: #333;">循环语句</h2>
+<pre style="line-height: 160%; box-sizing: content-box; border: 0; border-radius: 0; margin: 2px 0 8px; background-color: #f5f7f8;"><code style="display: block; overflow-x: auto; background: #1e1e1e; line-height: 160%; box-sizing: content-box; border: 0; border-radius: 0; letter-spacing: -.3px; padding: 18px; color: #f4f4f4; white-space: pre-wrap;">    <span style="color: #57a64a; font-style: italic; line-height: 160%; box-sizing: content-box;">/** for(起始值;执行条件(循环结束条件);累加记录步长){
+         执行的代码块
+      }
+    */</span>
+</code></pre>
+<h2 style="line-height: 160%; box-sizing: content-box; font-weight: 700; font-size: 34px; border-bottom: 1px solid #dbdbdb; color: #333;">break 和 continue</h2>
+<h3 style="line-height: 160%; box-sizing: content-box; font-weight: 700; font-size: 27px; color: #333;">break</h3>
+<pre style="line-height: 160%; box-sizing: content-box; border: 0; border-radius: 0; margin: 2px 0 8px; background-color: #f5f7f8;"><code style="display: block; overflow-x: auto; background: #1e1e1e; line-height: 160%; box-sizing: content-box; border: 0; border-radius: 0; letter-spacing: -.3px; padding: 18px; color: #f4f4f4; white-space: pre-wrap;">    <span style="color: #57a64a; font-style: italic; line-height: 160%; box-sizing: content-box;">// 只要在循环体中遇到break 整个循环就结束了</span>
+    <span style="color: #57a64a; font-style: italic; line-height: 160%; box-sizing: content-box;">// break后面的代码都会执行 以及i++</span>
+    
+    <span style="color: #569cd6; line-height: 160%; box-sizing: content-box;">for</span>(<span style="color: #569cd6; line-height: 160%; box-sizing: content-box;">var</span> i = <span style="color: #b8d7a3; line-height: 160%; box-sizing: content-box;">0</span>; i &lt; <span style="color: #b8d7a3; line-height: 160%; box-sizing: content-box;">5</span>; i++){
+        <span style="color: #569cd6; line-height: 160%; box-sizing: content-box;">if</span>(i === <span style="color: #b8d7a3; line-height: 160%; box-sizing: content-box;">3</span>){
+            <span style="color: #569cd6; line-height: 160%; box-sizing: content-box;">break</span>;<span style="color: #57a64a; font-style: italic; line-height: 160%; box-sizing: content-box;">//一旦遇到berak 就结束整个循环</span>
+        }
+        <span style="color: #4ec9b0; line-height: 160%; box-sizing: content-box;">console</span>.log(i)<span style="color: #57a64a; font-style: italic; line-height: 160%; box-sizing: content-box;">// 0 1 2 4 </span>
+    }
+</code></pre>
+<h3 style="line-height: 160%; box-sizing: content-box; font-weight: 700; font-size: 27px; color: #333;">continue</h3>
+<pre style="line-height: 160%; box-sizing: content-box; border: 0; border-radius: 0; margin: 2px 0 8px; background-color: #f5f7f8;"><code style="display: block; overflow-x: auto; background: #1e1e1e; line-height: 160%; box-sizing: content-box; border: 0; border-radius: 0; letter-spacing: -.3px; padding: 18px; color: #f4f4f4; white-space: pre-wrap;">    <span style="color: #57a64a; font-style: italic; line-height: 160%; box-sizing: content-box;">// 直接跳到下一轮 直接把continue忽略掉 但是不会中段代码</span>
+    <span style="color: #569cd6; line-height: 160%; box-sizing: content-box;">for</span> (<span style="color: #569cd6; line-height: 160%; box-sizing: content-box;">var</span> i = <span style="color: #b8d7a3; line-height: 160%; box-sizing: content-box;">0</span>; i &lt; <span style="color: #b8d7a3; line-height: 160%; box-sizing: content-box;">10</span>; i++) {
+      <span style="color: #569cd6; line-height: 160%; box-sizing: content-box;">if</span> (i &lt; <span style="color: #b8d7a3; line-height: 160%; box-sizing: content-box;">5</span>) { <span style="color: #57a64a; font-style: italic; line-height: 160%; box-sizing: content-box;">// i小于5的时候 遇到continue </span>
+        <span style="color: #57a64a; font-style: italic; line-height: 160%; box-sizing: content-box;">// 不会执行continue后面的代码 直接跳到下一轮循环</span>
+        <span style="color: #569cd6; line-height: 160%; box-sizing: content-box;">continue</span>;
+      }
+      <span style="color: #4ec9b0; line-height: 160%; box-sizing: content-box;">console</span>.log(<span style="color: #d69d85; line-height: 160%; box-sizing: content-box;">'i'</span>, i) <span style="color: #57a64a; font-style: italic; line-height: 160%; box-sizing: content-box;">// 5 6 7 8 9</span>
+    }
+</code></pre>
+<h3 style="line-height: 160%; box-sizing: content-box; font-weight: 700; font-size: 27px; color: #333;">while 循环语句</h3>
+<pre style="line-height: 160%; box-sizing: content-box; border: 0; border-radius: 0; margin: 2px 0 8px; background-color: #f5f7f8;"><code style="display: block; overflow-x: auto; background: #1e1e1e; line-height: 160%; box-sizing: content-box; border: 0; border-radius: 0; letter-spacing: -.3px; padding: 18px; color: #f4f4f4; white-space: pre-wrap;">     <span style="color: #57a64a; font-style: italic; line-height: 160%; box-sizing: content-box;">/** 
+       while 循环
+       语法
+       while (条件) {
+         // 只要条件成立为true 就会一直循环执行下去
+       }
+     */</span>
+
+    <span style="color: #569cd6; line-height: 160%; box-sizing: content-box;">var</span> n = <span style="color: #b8d7a3; line-height: 160%; box-sizing: content-box;">-10</span>
+    <span style="color: #569cd6; line-height: 160%; box-sizing: content-box;">while</span>(n &lt; <span style="color: #b8d7a3; line-height: 160%; box-sizing: content-box;">5</span>) {
+      <span style="color: #57a64a; font-style: italic; line-height: 160%; box-sizing: content-box;">// 在自身基础上 累加5</span>
+      n += <span style="color: #b8d7a3; line-height: 160%; box-sizing: content-box;">5</span> <span style="color: #57a64a; font-style: italic; line-height: 160%; box-sizing: content-box;">// n = -5 n = 0 n = 5</span>
+      <span style="color: #4ec9b0; line-height: 160%; box-sizing: content-box;">console</span>.log(<span style="color: #d69d85; line-height: 160%; box-sizing: content-box;">'n'</span>, n) <span style="color: #57a64a; font-style: italic; line-height: 160%; box-sizing: content-box;">// -5 0 5</span>
+      <span style="color: #57a64a; font-style: italic; line-height: 160%; box-sizing: content-box;">// if (n === 0) {</span>
+      <span style="color: #57a64a; font-style: italic; line-height: 160%; box-sizing: content-box;">//   break</span>
+      <span style="color: #57a64a; font-style: italic; line-height: 160%; box-sizing: content-box;">// }</span>
+    }
+
+     <span style="color: #57a64a; font-style: italic; line-height: 160%; box-sizing: content-box;">// a++ // a += 1</span>
+     <span style="color: #569cd6; line-height: 160%; box-sizing: content-box;">var</span> a = <span style="color: #b8d7a3; line-height: 160%; box-sizing: content-box;">1</span>
+     a += <span style="color: #b8d7a3; line-height: 160%; box-sizing: content-box;">10</span> <span style="color: #57a64a; font-style: italic; line-height: 160%; box-sizing: content-box;">// a = a + 10</span>
+     <span style="color: #4ec9b0; line-height: 160%; box-sizing: content-box;">console</span>.log(a) <span style="color: #57a64a; font-style: italic; line-height: 160%; box-sizing: content-box;">// 11</span>
+</code></pre>
+<h3 style="line-height: 160%; box-sizing: content-box; font-weight: 700; font-size: 27px; color: #333;">获取页面元素</h3>
+<blockquote style="line-height: 160%; box-sizing: content-box; margin: 15px 0; border-left: 4px solid #ddd; padding: 0 15px; color: #777;">
+<h4 style="line-height: 160%; box-sizing: content-box; font-size: 20px; color: #333; margin-top: 0;">DOM提供document对象(文档对象)</h4>
+<h4 style="line-height: 160%; box-sizing: content-box; font-size: 20px; color: #333;">1.根据class名获取元素</h4>
+<ul style="line-height: 160%; box-sizing: content-box; display: block; list-style-type: disc; padding-left: 30px; margin: 6px 0 10px; color: #333;">
+<li style="line-height: 160%; box-sizing: content-box; position: relative;">document.getElementById("ID名")</li>
+<li style="line-height: 160%; box-sizing: content-box; position: relative;">通过ID名获取到的元素是一个对象</li>
+</ul>
+<h4 style="line-height: 160%; box-sizing: content-box; font-size: 20px; color: #333;">2.根据class名获取一个元素</h4>
+<ul style="line-height: 160%; box-sizing: content-box; display: block; list-style-type: disc; padding-left: 30px; margin: 6px 0 10px; color: #333;">
+<li style="line-height: 160%; box-sizing: content-box; position: relative;">document.getElementsByClass('类名')</li>
+<li style="line-height: 160%; box-sizing: content-box; position: relative;">通过类名获取元素 返回的是个元素集合 获取到的元素对象都在集合里面</li>
+<li style="line-height: 160%; box-sizing: content-box; position: relative;">.length方法可以求出集合的长度</li>
+</ul>
+<h4 style="line-height: 160%; box-sizing: content-box; font-size: 20px; color: #333;">3.根据标签名获取一个元素</h4>
+<ul style="line-height: 160%; box-sizing: content-box; display: block; list-style-type: disc; padding-left: 30px; margin: 6px 0 10px; color: #333; margin-bottom: 0;">
+<li style="line-height: 160%; box-sizing: content-box; position: relative;">document.getElementsByTagName('标签名')</li>
+<li style="line-height: 160%; box-sizing: content-box; position: relative;">通过标签名获取到的元素 返回的是一个元素集合 获取到的元素对象都在集合里面</li>
+<li style="line-height: 160%; box-sizing: content-box; position: relative;">.length可以求出集合的长度</li>
+</ul>
+</blockquote>
+</div><center style="display:none !important;visibility:collapse !important;height:0 !important;white-space:nowrap;width:100%;overflow:hidden">%23%23%20if()%7B%7Delse%7B%7D%E6%9D%A1%E4%BB%B6%E5%88%A4%E6%96%AD%E8%AF%AD%E5%8F%A5%0A%3E%20%E8%AF%AD%E6%B3%95%EF%BC%9Aif(%E6%9D%A1%E4%BB%B6)%7B%E6%9D%A1%E4%BB%B6%E6%88%90%E7%AB%8B%E7%9A%84%E6%89%A7%E8%A1%8C%E8%AF%AD%E5%8F%A5%7Delse%7B%E6%9D%A1%E4%BB%B6%E4%B8%8D%E6%88%90%E7%AB%8B%E7%9A%84%E6%89%A7%E8%A1%8C%E8%AF%AD%E5%8F%A5%7D%0A%60%60%60javascript%0A%20%20%20%20%2F*%0A%20%20%20%20%20%20%20%20%E8%AF%AD%E6%B3%95%EF%BC%9A%0A%20%20%20%20%20%20%20%20%20%20%20%20if(%E6%9D%A1%E4%BB%B6%E5%88%A4%E6%96%AD)%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%2F%2F%20true%20%E6%9D%A1%E4%BB%B6%E6%88%90%E7%AB%8B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%E6%89%A7%E8%A1%8C%E4%B8%BB%E4%BD%93%0A%20%20%20%20%20%20%20%20%20%20%20%20%7Delse%20if(%E6%9D%A1%E4%BB%B6%E5%88%A4%E6%96%AD)%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%2F%2F%20true%20%E6%9D%A1%E4%BB%B6%E6%88%90%E7%AB%8B%0A%20%20%20%20%20%20%20%20%20%20%20%20%7Delse%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%2F%2F%20false%20%E6%9D%A1%E4%BB%B6%E4%B8%8D%E6%88%90%E7%AB%8B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%E6%89%A7%E8%A1%8C%E4%B8%BB%E4%BD%93%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20*%2F%0A%20%20%20%20%0A%20%20%20%20var%20text%20%3D%20%20%22%E9%BB%84%E7%81%AF%22%0A%20%20%20%20if(text%20%3D%3D%20%22%E7%BB%BF%E7%81%AF%22)%7B%0A%20%20%20%20%20%20%20%20console.log(%22%E5%BD%93%E5%89%8D%E6%98%AF%E7%BB%BF%E7%81%AF%EF%BC%8Cgreen%22)%0A%20%20%20%20%7Delse%20if(text%20%3D%3D%20%22%E9%BB%84%E7%81%AF%22)%7B%0A%20%20%20%20%20%20%20%20console.log(%22%E5%BD%93%E5%89%8D%E6%98%AF%E9%BB%84%E7%81%AF%22%EF%BC%8Cyellow)%0A%20%20%20%20%7Delse%7B%0A%20%20%20%20%20%20%20%20console.log(%22%E5%BD%93%E5%89%8D%E4%B8%8D%E6%98%AF%E7%BA%A2%E7%81%AF%EF%BC%8Cred%22)%0A%20%20%20%20%7D%0A%20%20%20%20%0A%20%20%20%20%0A%20%20%20%20%20var%20age%20%3D%205%3B%0A%20%20%20%20if(age%20%3D%3D%201)%7B%0A%20%20%20%20%20%20%20%20console.log(1)%0A%20%20%20%20%7Delse%20if(age%20%3D%3D%2010)%7B%0A%20%20%20%20%20%20%20%20console.log(10)%0A%20%20%20%20%7Delse%20if(age%20%3D%3D%2020)%7B%0A%20%20%20%20%20%20%20%20console.log(20)%0A%20%20%20%20%7Delse%7B%0A%20%20%20%20%20%20%20%20console.log(%22hello%20world%22)%0A%20%20%20%20%7D%0A%60%60%60%0A%23%23%20switch%20%E8%AF%AD%E5%8F%A5%0A%60%60%60javascript%0A%20%20%2F*%0A%20%20%20%20%E8%AF%AD%E6%B3%95%EF%BC%9A%0A%20%20%20%20switch(%E5%80%BC%2F%E5%8F%98%E9%87%8F)%7B%0A%20%20%20%20%20%20%20case%20%E6%9D%A1%E4%BB%B61%EF%BC%9A%E6%9D%A1%E4%BB%B6%E6%88%90%E7%AB%8B%E6%89%A7%E8%A1%8C%E7%9A%84%E4%BB%A3%E7%A0%81%20%E6%AF%8F%E4%B8%80%E4%B8%AA%E6%9D%A1%E4%BB%B6%E8%AF%AD%E5%8F%A5%E7%BB%93%E6%9D%9F%E9%83%BD%E8%A6%81%E5%8A%A0break%0A%20%20%20%20%20%20%20%20%20%20break%3B%0A%20%20%20%20%20%20%20case%20%E6%9D%A1%E4%BB%B62%3A%20%E6%9D%A1%E4%BB%B6%E6%88%90%E7%AB%8B%E6%89%A7%E8%A1%8C%E7%9A%84%E4%BB%A3%E7%A0%81%20%E6%AF%8F%E4%B8%80%E4%B8%AA%E6%9D%A1%E4%BB%B6%E8%AF%AD%E5%8F%A5%E7%BB%93%E6%9D%9F%E9%83%BD%E8%A6%81%E5%8A%A0break%0A%20%20%20%20%20%20%20%20%20%20break%3B%0A%20%20%20%20%20%20%20case%20%E6%9D%A1%E4%BB%B63%3A%20%E6%9D%A1%E4%BB%B6%E6%88%90%E7%AB%8B%E6%89%A7%E8%A1%8C%E7%9A%84%E4%BB%A3%E7%A0%81%20%E6%AF%8F%E4%B8%80%E4%B8%AA%E6%9D%A1%E4%BB%B6%E8%AF%AD%E5%8F%A5%E7%BB%93%E6%9D%9F%E9%83%BD%E8%A6%81%E5%8A%A0break%0A%20%20%20%20%20%20%20%20%20%20break%3B%0A%20%20%20%20%20%20%20default%3A%20%E4%BB%A5%E4%B8%8A%E6%9D%A1%E4%BB%B6%E9%83%BD%E4%B8%8D%E6%88%90%E7%AB%8B%E7%9A%84%E6%97%B6%E5%80%99%20%E6%89%A7%E8%A1%8Cdefault%E8%AF%AD%E5%8F%A5%20%E7%9B%B8%E5%BD%93%E4%BA%8Eelse%0A%20%20%20%20%20%7D%0A%20%20*%2F%20%20%0A%60%60%60%0A%0A%23%23%20%E9%80%BB%E8%BE%91%E8%BF%90%E7%AE%97%E7%AC%A6%0A%23%23%23%20%E9%80%BB%E8%BE%91%E6%88%96%20%7C%7C%20%E6%88%96%E8%80%85%20%0A%3E%20%E5%8F%AA%E6%9C%89%E4%B8%80%E4%B8%AA%E6%9D%A1%E4%BB%B6%E6%88%90%E7%AB%8B%20%E5%B0%B1%E4%BC%9A%E6%89%A7%E8%A1%8C%E4%BB%A3%E7%A0%81%E5%9D%97%0A%0A%0A%23%23%23%20%E9%80%BB%E8%BE%91%E4%B8%8E%20%26%26%20%E5%B9%B6%E4%B8%94%0A%3E%20%E6%89%80%E6%9C%89%E7%9A%84%E6%9D%A1%E4%BB%B6%E9%83%BD%E6%88%90%E7%AB%8B%20%E6%89%8D%E4%BC%9A%E6%89%A7%E8%A1%8C%E4%BB%A3%E7%A0%81%E5%9D%97%0A%0A%23%23%20%25%E5%8F%96%E6%A8%A1%0A%3E%20%E5%8F%96%E4%BD%99%E6%95%B0%20%E8%8E%B7%E5%8F%96%E4%BD%99%E6%95%B0%0A%0A%23%23%20%E4%B8%89%E5%85%83%E8%BF%90%E7%AE%97%E7%AC%A6%0A%0A%60%60%60javascript%0A%20%20%20%20%2F*%0A%20%20%20%20%20%20%20%20%E8%AF%AD%E6%B3%95%EF%BC%9A%0A%20%20%20%20%20%20%20%20%20%20%20%E5%88%A4%E6%96%AD%E6%9D%A1%E4%BB%B6%EF%BC%9Ftrue%E6%89%A7%E8%A1%8C%E7%9A%84%E8%AF%AD%E5%8F%A5%20%EF%BC%9A%20false%E6%89%A7%E8%A1%8C%E7%9A%84%E8%AF%AD%E5%8F%A5%0A%20%20%20%20*%2F%0A%20%20%20%202%20%3C%205%20%3F%20console.log(%222%E5%B0%8F%E4%BA%8E5%22)%3A%20console.log(%222%E5%A4%A7%E4%BA%8E5%22)%0A%60%60%60%0A%0A%23%23%20%E5%8F%96%E5%80%BC%E9%80%BB%E8%BE%91%E8%BF%90%E7%AE%97%E7%AC%A6%0A%0A%23%23%23%20%E9%80%BB%E8%BE%91%E6%88%96%0A%0A%3E%201.%E5%85%88%E7%9C%8B%E5%B7%A6%E8%BE%B9%E5%80%BC%20%E5%93%AA%E4%B8%80%E4%B8%AA%E4%B8%BA%E7%9C%9F%20%E5%B0%B1%E8%BF%94%E5%9B%9E%E5%93%AA%E4%B8%80%E4%B8%AA%0A%3E%20%0A%3E%202.%E5%A6%82%E6%9E%9C%E9%83%BD%E4%B8%BAtrue%20%E8%BF%94%E5%9B%9E%E7%AC%AC%E4%B8%80%E4%B8%AA%0A%3E%20%0A%3E%203.%E5%A6%82%E6%9E%9C%E9%83%BD%E4%B8%BAfalse%20%E5%B0%B1%E8%BF%94%E5%9B%9E%E6%9C%80%E5%90%8E%E4%B8%80%E4%B8%AA%0A%0A%0A%23%23%23%20%E9%80%BB%E8%BE%91%E4%B8%8E%0A%0A%3E%201.%E5%85%88%E7%9C%8B%E5%B7%A6%E8%BE%B9%E5%80%BC%20%E5%93%AA%E4%B8%80%E4%B8%AA%E4%B8%BA%E5%81%87%20%E5%B0%B1%E8%BF%94%E5%9B%9E%E5%93%AA%E4%B8%80%E4%B8%AA%0A%3E%20%0A%3E%202.%E5%A6%82%E6%9E%9C%E9%83%BD%E4%B8%BAtrue%20%E8%BF%94%E5%9B%9E%E6%9C%80%E5%90%8E%E4%B8%80%E4%B8%AA%0A%3E%20%0A%3E%203.%E5%A6%82%E6%9E%9C%E9%83%BD%E4%B8%BAfalse%20%E8%BF%94%E5%9B%9E%E7%AC%AC%E4%B8%80%E4%B8%AA%0A%0A%23%23%20%E5%BE%AA%E7%8E%AF%E8%AF%AD%E5%8F%A5%0A%0A%60%60%60javascript%0A%20%20%20%20%2F**%20for(%E8%B5%B7%E5%A7%8B%E5%80%BC%3B%E6%89%A7%E8%A1%8C%E6%9D%A1%E4%BB%B6(%E5%BE%AA%E7%8E%AF%E7%BB%93%E6%9D%9F%E6%9D%A1%E4%BB%B6)%3B%E7%B4%AF%E5%8A%A0%E8%AE%B0%E5%BD%95%E6%AD%A5%E9%95%BF)%7B%0A%20%20%20%20%20%20%20%20%20%E6%89%A7%E8%A1%8C%E7%9A%84%E4%BB%A3%E7%A0%81%E5%9D%97%0A%20%20%20%20%20%20%7D%0A%20%20%20%20*%2F%0A%60%60%60%0A%23%23%20break%20%E5%92%8C%20continue%0A%23%23%23%20break%0A%60%60%60javascript%0A%20%20%20%20%2F%2F%20%E5%8F%AA%E8%A6%81%E5%9C%A8%E5%BE%AA%E7%8E%AF%E4%BD%93%E4%B8%AD%E9%81%87%E5%88%B0break%20%E6%95%B4%E4%B8%AA%E5%BE%AA%E7%8E%AF%E5%B0%B1%E7%BB%93%E6%9D%9F%E4%BA%86%0A%20%20%20%20%2F%2F%20break%E5%90%8E%E9%9D%A2%E7%9A%84%E4%BB%A3%E7%A0%81%E9%83%BD%E4%BC%9A%E6%89%A7%E8%A1%8C%20%E4%BB%A5%E5%8F%8Ai%2B%2B%0A%20%20%20%20%0A%20%20%20%20for(var%20i%20%3D%200%3B%20i%20%3C%205%3B%20i%2B%2B)%7B%0A%20%20%20%20%20%20%20%20if(i%20%3D%3D%3D%203)%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20break%3B%2F%2F%E4%B8%80%E6%97%A6%E9%81%87%E5%88%B0berak%20%E5%B0%B1%E7%BB%93%E6%9D%9F%E6%95%B4%E4%B8%AA%E5%BE%AA%E7%8E%AF%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20console.log(i)%2F%2F%200%201%202%204%20%0A%20%20%20%20%7D%0A%60%60%60%0A%23%23%23%20continue%0A%60%60%60javascript%0A%20%20%20%20%2F%2F%20%E7%9B%B4%E6%8E%A5%E8%B7%B3%E5%88%B0%E4%B8%8B%E4%B8%80%E8%BD%AE%20%E7%9B%B4%E6%8E%A5%E6%8A%8Acontinue%E5%BF%BD%E7%95%A5%E6%8E%89%20%E4%BD%86%E6%98%AF%E4%B8%8D%E4%BC%9A%E4%B8%AD%E6%AE%B5%E4%BB%A3%E7%A0%81%0A%20%20%20%20for%20(var%20i%20%3D%200%3B%20i%20%3C%2010%3B%20i%2B%2B)%20%7B%0A%20%20%20%20%20%20if%20(i%20%3C%205)%20%7B%20%2F%2F%20i%E5%B0%8F%E4%BA%8E5%E7%9A%84%E6%97%B6%E5%80%99%20%E9%81%87%E5%88%B0continue%20%0A%20%20%20%20%20%20%20%20%2F%2F%20%E4%B8%8D%E4%BC%9A%E6%89%A7%E8%A1%8Ccontinue%E5%90%8E%E9%9D%A2%E7%9A%84%E4%BB%A3%E7%A0%81%20%E7%9B%B4%E6%8E%A5%E8%B7%B3%E5%88%B0%E4%B8%8B%E4%B8%80%E8%BD%AE%E5%BE%AA%E7%8E%AF%0A%20%20%20%20%20%20%20%20continue%3B%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20console.log('i'%2C%20i)%20%2F%2F%205%206%207%208%209%0A%20%20%20%20%7D%0A%60%60%60%0A%23%23%23%20while%20%E5%BE%AA%E7%8E%AF%E8%AF%AD%E5%8F%A5%0A%60%60%60javascript%0A%20%20%20%20%20%2F**%20%0A%20%20%20%20%20%20%20while%20%E5%BE%AA%E7%8E%AF%0A%20%20%20%20%20%20%20%E8%AF%AD%E6%B3%95%0A%20%20%20%20%20%20%20while%20(%E6%9D%A1%E4%BB%B6)%20%7B%0A%20%20%20%20%20%20%20%20%20%2F%2F%20%E5%8F%AA%E8%A6%81%E6%9D%A1%E4%BB%B6%E6%88%90%E7%AB%8B%E4%B8%BAtrue%20%E5%B0%B1%E4%BC%9A%E4%B8%80%E7%9B%B4%E5%BE%AA%E7%8E%AF%E6%89%A7%E8%A1%8C%E4%B8%8B%E5%8E%BB%0A%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20*%2F%0A%0A%20%20%20%20var%20n%20%3D%20-10%0A%20%20%20%20while(n%20%3C%205)%20%7B%0A%20%20%20%20%20%20%2F%2F%20%E5%9C%A8%E8%87%AA%E8%BA%AB%E5%9F%BA%E7%A1%80%E4%B8%8A%20%E7%B4%AF%E5%8A%A05%0A%20%20%20%20%20%20n%20%2B%3D%205%20%2F%2F%20n%20%3D%20-5%20n%20%3D%200%20n%20%3D%205%0A%20%20%20%20%20%20console.log('n'%2C%20n)%20%2F%2F%20-5%200%205%0A%20%20%20%20%20%20%2F%2F%20if%20(n%20%3D%3D%3D%200)%20%7B%0A%20%20%20%20%20%20%2F%2F%20%20%20break%0A%20%20%20%20%20%20%2F%2F%20%7D%0A%20%20%20%20%7D%0A%0A%20%20%20%20%20%2F%2F%20a%2B%2B%20%2F%2F%20a%20%2B%3D%201%0A%20%20%20%20%20var%20a%20%3D%201%0A%20%20%20%20%20a%20%2B%3D%2010%20%2F%2F%20a%20%3D%20a%20%2B%2010%0A%20%20%20%20%20console.log(a)%20%2F%2F%2011%0A%60%60%60%0A%23%23%23%20%E8%8E%B7%E5%8F%96%E9%A1%B5%E9%9D%A2%E5%85%83%E7%B4%A0%0A%3E%20%23%23%23%23%20DOM%E6%8F%90%E4%BE%9Bdocument%E5%AF%B9%E8%B1%A1(%E6%96%87%E6%A1%A3%E5%AF%B9%E8%B1%A1)%0A%3E%20%23%23%23%23%201.%E6%A0%B9%E6%8D%AEclass%E5%90%8D%E8%8E%B7%E5%8F%96%E5%85%83%E7%B4%A0%0A%3E%20-%20document.getElementById(%22ID%E5%90%8D%22)%0A%3E%20-%20%E9%80%9A%E8%BF%87ID%E5%90%8D%E8%8E%B7%E5%8F%96%E5%88%B0%E7%9A%84%E5%85%83%E7%B4%A0%E6%98%AF%E4%B8%80%E4%B8%AA%E5%AF%B9%E8%B1%A1%0A%3E%20%23%23%23%23%202.%E6%A0%B9%E6%8D%AEclass%E5%90%8D%E8%8E%B7%E5%8F%96%E4%B8%80%E4%B8%AA%E5%85%83%E7%B4%A0%0A%3E%20-%20document.getElementsByClass('%E7%B1%BB%E5%90%8D')%0A%3E%20-%20%E9%80%9A%E8%BF%87%E7%B1%BB%E5%90%8D%E8%8E%B7%E5%8F%96%E5%85%83%E7%B4%A0%20%E8%BF%94%E5%9B%9E%E7%9A%84%E6%98%AF%E4%B8%AA%E5%85%83%E7%B4%A0%E9%9B%86%E5%90%88%20%E8%8E%B7%E5%8F%96%E5%88%B0%E7%9A%84%E5%85%83%E7%B4%A0%E5%AF%B9%E8%B1%A1%E9%83%BD%E5%9C%A8%E9%9B%86%E5%90%88%E9%87%8C%E9%9D%A2%0A%3E%20-%20.length%E6%96%B9%E6%B3%95%E5%8F%AF%E4%BB%A5%E6%B1%82%E5%87%BA%E9%9B%86%E5%90%88%E7%9A%84%E9%95%BF%E5%BA%A6%0A%3E%20%23%23%23%23%203.%E6%A0%B9%E6%8D%AE%E6%A0%87%E7%AD%BE%E5%90%8D%E8%8E%B7%E5%8F%96%E4%B8%80%E4%B8%AA%E5%85%83%E7%B4%A0%0A%3E%20-%20document.getElementsByTagName('%E6%A0%87%E7%AD%BE%E5%90%8D')%0A%3E%20-%20%E9%80%9A%E8%BF%87%E6%A0%87%E7%AD%BE%E5%90%8D%E8%8E%B7%E5%8F%96%E5%88%B0%E7%9A%84%E5%85%83%E7%B4%A0%20%E8%BF%94%E5%9B%9E%E7%9A%84%E6%98%AF%E4%B8%80%E4%B8%AA%E5%85%83%E7%B4%A0%E9%9B%86%E5%90%88%20%E8%8E%B7%E5%8F%96%E5%88%B0%E7%9A%84%E5%85%83%E7%B4%A0%E5%AF%B9%E8%B1%A1%E9%83%BD%E5%9C%A8%E9%9B%86%E5%90%88%E9%87%8C%E9%9D%A2%0A%3E%20-%20.length%E5%8F%AF%E4%BB%A5%E6%B1%82%E5%87%BA%E9%9B%86%E5%90%88%E7%9A%84%E9%95%BF%E5%BA%A6</center></body></html>
